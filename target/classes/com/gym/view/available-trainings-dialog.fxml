@@ -18,7 +18,6 @@
                 <Insets top="20" right="30" bottom="20" left="30"/>
             </padding>
             
-            <!-- Header with back button -->
             <HBox alignment="CENTER_LEFT" spacing="20">
                 <Button styleClass="back-button" onAction="#handleClose">
                     <graphic>
@@ -28,7 +27,6 @@
                 <Label text="Available Trainings" styleClass="header-text"/>
             </HBox>
             
-            <!-- Filters -->
             <HBox spacing="15" alignment="CENTER_LEFT">
                 <DatePicker fx:id="datePicker" promptText="Filter by date" styleClass="date-picker"/>
                 <ComboBox fx:id="trainerFilter" promptText="Filter by trainer" styleClass="combo-box"/>

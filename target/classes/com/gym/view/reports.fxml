@@ -12,7 +12,6 @@
         <Insets top="20" right="20" bottom="20" left="20"/>
     </padding>
 
-    <!-- Date Range Selection -->
     <HBox spacing="10" alignment="CENTER_LEFT">
         <Label text="From:"/>
         <DatePicker fx:id="fromDatePicker"/>
@@ -21,11 +20,9 @@
     </HBox>
 
     <TabPane fx:id="reportsTabs" VBox.vgrow="ALWAYS">
-        <!-- Visits Tab -->
         <Tab text="Visits" closable="false">
             <VBox spacing="10">
                 <HBox spacing="20" VBox.vgrow="ALWAYS">
-                    <!-- Client Visits Table -->
                     <VBox spacing="5" HBox.hgrow="ALWAYS">
                         <Label text="Client Visits" styleClass="section-header"/>
                         <TableView fx:id="clientVisitsTable" VBox.vgrow="ALWAYS">
@@ -36,7 +33,6 @@
                         </TableView>
                     </VBox>
                     
-                    <!-- Visits by Day Chart -->
                     <VBox spacing="5" HBox.hgrow="ALWAYS">
                         <Label text="Visits by Day" styleClass="section-header"/>
                         <BarChart fx:id="visitsByDayChart" VBox.vgrow="ALWAYS">
@@ -52,7 +48,6 @@
             </VBox>
         </Tab>
 
-        <!-- Trainers Tab -->
         <Tab text="Trainers" closable="false">
             <VBox spacing="10">
                 <Label text="Trainer Statistics" styleClass="section-header"/>
@@ -67,13 +62,11 @@
             </VBox>
         </Tab>
 
-        <!-- Payments Tab -->
         <Tab text="Payments" closable="false">
             <VBox spacing="10">
                 <Label fx:id="totalAmountLabel" styleClass="total-amount"/>
                 
                 <HBox spacing="20" VBox.vgrow="ALWAYS">
-                    <!-- Payment Charts -->
                     <VBox spacing="10" HBox.hgrow="ALWAYS">
                         <PieChart fx:id="paymentMethodsChart" title="Payment Methods" VBox.vgrow="ALWAYS"/>
                         <LineChart fx:id="dailyPaymentsChart" title="Daily Payments" VBox.vgrow="ALWAYS">
@@ -86,7 +79,6 @@
                         </LineChart>
                     </VBox>
                     
-                    <!-- Outstanding Payments -->
                     <VBox spacing="5" HBox.hgrow="ALWAYS">
                         <Label text="Outstanding Payments" styleClass="section-header"/>
                         <TableView fx:id="outstandingPaymentsTable" VBox.vgrow="ALWAYS">
@@ -102,7 +94,6 @@
             </VBox>
         </Tab>
 
-        <!-- Popular Trainings Tab -->
         <Tab text="Popular Trainings" closable="false">
             <VBox spacing="10">
                 <Label text="Top 5 Most Popular Trainings" styleClass="section-header"/>

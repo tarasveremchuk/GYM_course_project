@@ -18,12 +18,10 @@
         <Insets top="30" right="40" bottom="30" left="40"/>
     </padding>
 
-    <!-- Header -->
     <HBox alignment="CENTER">
         <Text fx:id="dialogTitle" styleClass="dialog-title"/>
     </HBox>
 
-    <!-- Photo Upload Section -->
     <VBox alignment="CENTER" spacing="10" styleClass="photo-section">
         <ImageView fx:id="photoPreview" fitHeight="150" fitWidth="150" styleClass="photo-preview" preserveRatio="true"/>
         <Button fx:id="uploadButton" text="Upload Photo" styleClass="upload-button" onAction="#handlePhotoUpload">
@@ -33,51 +31,39 @@
         </Button>
     </VBox>
 
-    <!-- Form Fields -->
     <GridPane hgap="15" vgap="15">
         <columnConstraints>
             <ColumnConstraints hgrow="NEVER" minWidth="100"/>
             <ColumnConstraints hgrow="ALWAYS"/>
         </columnConstraints>
 
-        <!-- Full Name -->
         <Label text="Full Name:" styleClass="field-label" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
         <TextField fx:id="fullNameField" styleClass="field-input" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
 
-        <!-- Birth Date -->
         <Label text="Birth Date:" styleClass="field-label" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
         <DatePicker fx:id="birthDatePicker" styleClass="field-input" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
-
-        <!-- Phone -->
         <Label text="Phone:" styleClass="field-label" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
         <TextField fx:id="phoneField" styleClass="field-input" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
 
-        <!-- Email -->
         <Label text="Email:" styleClass="field-label" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
         <TextField fx:id="emailField" styleClass="field-input" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
 
-        <!-- Medical Notes -->
         <Label text="Medical Notes:" styleClass="field-label" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
         <TextArea fx:id="medicalNotesArea" styleClass="field-input" wrapText="true" 
                   prefRowCount="3" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
 
-        <!-- Status -->
         <Label text="Status:" styleClass="field-label" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
         <ComboBox fx:id="statusComboBox" styleClass="field-input" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
 
-        <!-- Username -->
         <Label text="Username:" styleClass="field-label" GridPane.columnIndex="0" GridPane.rowIndex="6"/>
         <TextField fx:id="usernameField" styleClass="field-input" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
 
-        <!-- Password -->
         <Label text="Password:" styleClass="field-label" GridPane.columnIndex="0" GridPane.rowIndex="7"/>
         <PasswordField fx:id="passwordField" styleClass="field-input" GridPane.columnIndex="1" GridPane.rowIndex="7"/>
     </GridPane>
 
-    <!-- Error Label -->
     <Label fx:id="errorLabel" styleClass="error-label" wrapText="true"/>
 
-    <!-- Buttons -->
     <HBox spacing="10" alignment="CENTER_RIGHT">
         <Button fx:id="cancelButton" text="Cancel" styleClass="cancel-button" onAction="#handleCancel"/>
         <Button fx:id="saveButton" text="Save" styleClass="save-button" onAction="#handleSave"/>

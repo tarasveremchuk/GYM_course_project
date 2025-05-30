@@ -18,7 +18,6 @@
                 <Insets top="20" right="30" bottom="20" left="30"/>
             </padding>
             
-            <!-- Header -->
             <HBox alignment="CENTER_LEFT" spacing="20">
                 <Button styleClass="back-button" onAction="#handleBack">
                     <graphic>
@@ -28,7 +27,6 @@
                 <Text styleClass="header-text" text="Memberships Management"/>
             </HBox>
             
-            <!-- Search and Filter Bar -->
             <HBox spacing="15" alignment="CENTER_LEFT">
                 <TextField fx:id="searchField" promptText="Search by client name" 
                           styleClass="search-field" HBox.hgrow="ALWAYS"/>
@@ -65,7 +63,6 @@
         </TableView>
     </center>
 
-    <!-- Status Bar -->
     <bottom>
         <HBox spacing="20" styleClass="status-bar">
             <padding>

@@ -16,19 +16,16 @@
         <Insets top="30" right="40" bottom="30" left="40"/>
     </padding>
 
-    <!-- Header -->
     <HBox alignment="CENTER">
         <Text fx:id="staffNameText" styleClass="staff-name"/>
     </HBox>
 
-    <!-- Schedule Grid -->
     <GridPane fx:id="scheduleGrid" hgap="10" vgap="10">
         <columnConstraints>
             <ColumnConstraints hgrow="NEVER" minWidth="100"/>
             <ColumnConstraints hgrow="ALWAYS"/>
         </columnConstraints>
 
-        <!-- Days of the week -->
         <Label text="Monday:" styleClass="day-label" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
         <TextField fx:id="mondayField" styleClass="schedule-field" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
 
@@ -51,10 +48,8 @@
         <TextField fx:id="sundayField" styleClass="schedule-field" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
     </GridPane>
 
-    <!-- Error Label -->
     <Label fx:id="errorLabel" styleClass="error-label" wrapText="true"/>
 
-    <!-- Buttons -->
     <HBox spacing="10" alignment="CENTER_RIGHT">
         <Button fx:id="cancelButton" text="Close" styleClass="cancel-button" onAction="#handleClose"/>
         <Button fx:id="saveButton" text="Save" styleClass="save-button" onAction="#handleSave"/>

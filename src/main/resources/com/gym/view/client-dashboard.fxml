@@ -31,7 +31,6 @@
                     <Insets top="30" right="30" bottom="30" left="30"/>
                 </padding>
 
-                <!-- Profile and Medical Information Section -->
                 <HBox styleClass="profile-section" spacing="20" alignment="CENTER_LEFT">
                     <ImageView fx:id="profileImage" fitHeight="150" fitWidth="150" 
                               preserveRatio="true" styleClass="profile-image"/>
@@ -58,10 +57,8 @@
                     </VBox>
                 </HBox>
 
-                <!-- Trainings Section -->
                 <TitledPane text="Training Information" expanded="true">
                     <VBox spacing="20">
-                        <!-- Upcoming Trainings -->
                         <HBox spacing="10" alignment="CENTER_LEFT">
                             <Label text="Upcoming Trainings" styleClass="section-header" HBox.hgrow="ALWAYS"/>
                             <Button fx:id="bookTrainingButton" text="Book Training" styleClass="action-button" onAction="#handleBookTraining"/>
@@ -81,7 +78,6 @@
 
                         <Separator/>
 
-                        <!-- Training History -->
                         <Label text="Training History" styleClass="section-header"/>
                         <TableView fx:id="trainingHistoryTable" VBox.vgrow="ALWAYS" minHeight="200">
                             <columns>

@@ -33649,3 +33649,64 @@ jakarta.mail.MessagingException: Test Messaging Exception
 2025-05-30 17:40:20.588 [JavaFX Application Thread] INFO  com.gym.service.ClientService - Deleting client with ID: 33
 2025-05-30 17:40:20.735 [JavaFX Application Thread] INFO  c.g.c.ClientsManagementController - Client and all related data deleted: sdf
 2025-05-30 17:47:33.974 [JavaFX Application Thread] INFO  c.g.c.AdminDashboardController - User logged out successfully
+2025-05-30 22:53:03.713 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Database properties loaded successfully from database.properties
+2025-05-30 22:53:03.721 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database driver: org.postgresql.Driver
+2025-05-30 22:53:03.722 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://localhost:5433/gym
+2025-05-30 22:53:03.722 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database username: postgres
+2025-05-30 22:53:03.722 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database password: ********
+2025-05-30 22:53:03.722 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://localhost:5433/gym
+2025-05-30 22:53:03.722 [JavaFX Application Thread] INFO  com.gym.util.EntityManagerUtil - Setting up JPA with URL: jdbc:postgresql://localhost:5433/gym
+2025-05-30 22:53:08.435 [JavaFX Application Thread] INFO  com.gym.util.EntityManagerUtil - JPA EntityManagerFactory created successfully
+2025-05-30 22:53:24.191 [JavaFX Application Thread] INFO  com.gym.controller.LoginController - User lemko logged in successfully with role admin
+2025-05-30 22:53:25.411 [JavaFX Application Thread] INFO  c.g.c.AdminDashboardController - Opening Clients Management...
+2025-05-30 22:53:25.508 [JavaFX Application Thread] INFO  com.gym.service.ClientService - Retrieving all clients
+2025-05-30 22:53:25.568 [JavaFX Application Thread] INFO  c.g.c.ClientsManagementController - Loaded 4 clients from database
+2025-05-30 22:53:25.577 [JavaFX Application Thread] INFO  c.g.c.AdminDashboardController - Opened Clients Management view
+2025-05-30 22:53:29.786 [JavaFX Application Thread] INFO  c.g.c.AdminDashboardController - Opening Staff Management...
+2025-05-30 22:53:29.805 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database driver: org.postgresql.Driver
+2025-05-30 22:53:29.806 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - PostgreSQL JDBC Driver successfully registered
+2025-05-30 22:53:29.806 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://localhost:5433/gym
+2025-05-30 22:53:29.806 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database username: postgres
+2025-05-30 22:53:29.806 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database password: ********
+2025-05-30 22:53:29.807 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Attempting to connect to database with URL: jdbc:postgresql://localhost:5433/gym, username: postgres
+2025-05-30 22:53:29.869 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Successfully established database connection to jdbc:postgresql://localhost:5433/gym
+2025-05-30 22:53:29.877 [JavaFX Application Thread] INFO  c.g.c.StaffManagementController - Loaded 14 staff members from database
+2025-05-30 22:53:29.887 [JavaFX Application Thread] INFO  c.g.c.AdminDashboardController - Opened Staff Management view
+2025-05-30 22:53:32.359 [JavaFX Application Thread] INFO  c.g.c.AdminDashboardController - Opening Memberships...
+2025-05-30 22:53:32.379 [JavaFX Application Thread] INFO  com.gym.service.MembershipService - Retrieving all memberships
+2025-05-30 22:53:32.431 [JavaFX Application Thread] INFO  c.g.c.AdminDashboardController - Opened Memberships Management view
+2025-05-30 22:55:23.065 [JavaFX Application Thread] INFO  c.g.c.MembershipsManagementController - View history for membership ID: 19
+2025-05-30 22:58:29.471 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Database properties loaded successfully from database.properties
+2025-05-30 22:58:29.476 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database driver: org.postgresql.Driver
+2025-05-30 22:58:29.476 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://localhost:5433/gym
+2025-05-30 22:58:29.476 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database username: postgres
+2025-05-30 22:58:29.476 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database password: ********
+2025-05-30 22:58:29.478 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://localhost:5433/gym
+2025-05-30 22:58:29.478 [JavaFX Application Thread] INFO  com.gym.util.EntityManagerUtil - Setting up JPA with URL: jdbc:postgresql://localhost:5433/gym
+2025-05-30 22:58:33.549 [JavaFX Application Thread] INFO  com.gym.util.EntityManagerUtil - JPA EntityManagerFactory created successfully
+2025-05-30 22:58:41.811 [JavaFX Application Thread] INFO  c.g.c.AdminDashboardController - User logged out successfully
+2025-05-30 22:58:47.491 [JavaFX Application Thread] INFO  com.gym.controller.LoginController - User lemko logged in successfully with role admin
+2025-05-30 22:58:49.445 [JavaFX Application Thread] INFO  c.g.c.AdminDashboardController - Opening Memberships...
+2025-05-30 22:58:49.459 [JavaFX Application Thread] INFO  com.gym.service.MembershipService - Retrieving all memberships
+2025-05-30 22:58:49.491 [JavaFX Application Thread] INFO  c.g.c.AdminDashboardController - Opened Memberships Management view
+2025-05-30 22:58:51.240 [JavaFX Application Thread] INFO  c.g.c.MembershipsManagementController - View history for membership ID: 20
+2025-05-30 22:59:52.921 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Database properties loaded successfully from database.properties
+2025-05-30 22:59:52.926 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database driver: org.postgresql.Driver
+2025-05-30 22:59:52.926 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://localhost:5433/gym
+2025-05-30 22:59:52.926 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database username: postgres
+2025-05-30 22:59:52.927 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database password: ********
+2025-05-30 22:59:52.927 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://localhost:5433/gym
+2025-05-30 22:59:52.927 [JavaFX Application Thread] INFO  com.gym.util.EntityManagerUtil - Setting up JPA with URL: jdbc:postgresql://localhost:5433/gym
+2025-05-30 22:59:57.058 [JavaFX Application Thread] INFO  com.gym.util.EntityManagerUtil - JPA EntityManagerFactory created successfully
+2025-05-30 23:00:10.349 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Database properties loaded successfully from database.properties
+2025-05-30 23:00:10.357 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database driver: org.postgresql.Driver
+2025-05-30 23:00:10.357 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://localhost:5433/gym
+2025-05-30 23:00:10.357 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database username: postgres
+2025-05-30 23:00:10.357 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database password: ********
+2025-05-30 23:00:10.357 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://localhost:5433/gym
+2025-05-30 23:00:10.357 [JavaFX Application Thread] INFO  com.gym.util.EntityManagerUtil - Setting up JPA with URL: jdbc:postgresql://localhost:5433/gym
+2025-05-30 23:00:14.052 [JavaFX Application Thread] INFO  com.gym.util.EntityManagerUtil - JPA EntityManagerFactory created successfully
+2025-05-30 23:00:29.164 [JavaFX Application Thread] INFO  com.gym.controller.LoginController - User lemko logged in successfully with role admin
+2025-05-30 23:00:30.023 [JavaFX Application Thread] INFO  c.g.c.AdminDashboardController - Opening Memberships...
+2025-05-30 23:00:30.093 [JavaFX Application Thread] INFO  com.gym.service.MembershipService - Retrieving all memberships
+2025-05-30 23:00:30.185 [JavaFX Application Thread] INFO  c.g.c.AdminDashboardController - Opened Memberships Management view

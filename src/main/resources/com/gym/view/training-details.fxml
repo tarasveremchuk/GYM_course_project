@@ -15,7 +15,6 @@
     <VBox spacing="20" AnchorPane.topAnchor="20" AnchorPane.rightAnchor="20" 
           AnchorPane.bottomAnchor="20" AnchorPane.leftAnchor="20">
         
-        <!-- Header -->
         <HBox alignment="CENTER_LEFT" spacing="20">
             <Text fx:id="trainingNameText" styleClass="header-text"/>
             <Region HBox.hgrow="ALWAYS"/>
@@ -26,7 +25,6 @@
             </Button>
         </HBox>
 
-        <!-- Training Info -->
         <GridPane styleClass="info-grid" hgap="15" vgap="10">
             <columnConstraints>
                 <ColumnConstraints minWidth="100" prefWidth="120"/>
@@ -50,7 +48,6 @@
             <Text fx:id="capacityText" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
         </GridPane>
 
-        <!-- Bookings Section -->
         <VBox spacing="10">
             <HBox spacing="10" alignment="CENTER_LEFT">
                 <Text styleClass="section-header" text="Bookings"/>
@@ -78,7 +75,6 @@
             </TableView>
         </VBox>
 
-        <!-- Status Bar -->
         <HBox spacing="20" styleClass="status-bar">
             <Label fx:id="totalBookingsLabel" text="Total Bookings: 0"/>
             <Label fx:id="availableSlotsLabel" text="Available Slots: 0"/>

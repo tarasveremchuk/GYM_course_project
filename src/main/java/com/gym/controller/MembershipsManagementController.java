@@ -120,13 +120,11 @@ public class MembershipsManagementController {
             private final Button editButton = createActionButton("EDIT", "edit-icon");
             private final Button deleteButton = createActionButton("TRASH", "delete-icon");
             private final Button payButton = createActionButton("MONEY", "pay-icon");
-            private final Button historyButton = createActionButton("HISTORY", "history-icon");
 
             {
                 editButton.setOnAction(event -> handleEditMembership(getTableRow().getItem()));
                 deleteButton.setOnAction(event -> handleDeleteMembership(getTableRow().getItem()));
                 payButton.setOnAction(event -> handlePayMembership(getTableRow().getItem()));
-                historyButton.setOnAction(event -> handleViewHistory(getTableRow().getItem()));
             }
 
             @Override
@@ -143,7 +141,6 @@ public class MembershipsManagementController {
                         actions.getChildren().add(payButton);
                     }
                     
-                    actions.getChildren().add(historyButton);
                     setGraphic(actions);
                 }
             }
@@ -356,10 +353,7 @@ public class MembershipsManagementController {
         });
     }
 
-    private void handleViewHistory(Membership membership) {
-        
-        log.info("View history for membership ID: {}", membership.getId());
-    }
+
 
     @FXML
     private void handleBack() {

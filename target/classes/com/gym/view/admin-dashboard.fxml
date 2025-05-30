@@ -31,35 +31,30 @@
                     <Insets top="30" right="30" bottom="30" left="30"/>
                 </padding>
 
-                <!-- Clients Management Card -->
                 <VBox styleClass="dashboard-card" onMouseClicked="#handleClientsManagement" GridPane.columnIndex="0" GridPane.rowIndex="0">
                     <FontAwesomeIconView glyphName="USERS" styleClass="card-icon"/>
                     <Text text="Clients Management" styleClass="card-title"/>
                     <Text text="Manage gym members and their information" styleClass="card-description"/>
                 </VBox>
 
-                <!-- Staff Management Card -->
                 <VBox styleClass="dashboard-card" onMouseClicked="#handleStaffManagement" GridPane.columnIndex="1" GridPane.rowIndex="0">
                     <FontAwesomeIconView glyphName="ID_CARD" styleClass="card-icon"/>
                     <Text text="Staff Management" styleClass="card-title"/>
                     <Text text="Manage trainers and staff members" styleClass="card-description"/>
                 </VBox>
 
-                <!-- Memberships Card -->
                 <VBox styleClass="dashboard-card" onMouseClicked="#handleMemberships" GridPane.columnIndex="0" GridPane.rowIndex="1">
                     <FontAwesomeIconView glyphName="CREDIT_CARD" styleClass="card-icon"/>
                     <Text text="Memberships" styleClass="card-title"/>
                     <Text text="Manage membership plans and subscriptions" styleClass="card-description"/>
                 </VBox>
 
-                <!-- Training Schedule Card -->
                 <VBox styleClass="dashboard-card" onMouseClicked="#handleTrainingSchedule" GridPane.columnIndex="1" GridPane.rowIndex="1">
                     <FontAwesomeIconView glyphName="CALENDAR" styleClass="card-icon"/>
                     <Text text="Training Schedule" styleClass="card-title"/>
                     <Text text="Manage training sessions and schedules" styleClass="card-description"/>
                 </VBox>
 
-                <!-- Reports Card -->
                 <VBox styleClass="dashboard-card" onMouseClicked="#handleReports" GridPane.columnIndex="0" GridPane.rowIndex="2">
                     <FontAwesomeIconView glyphName="BAR_CHART" styleClass="card-icon"/>
                     <Text text="Reports" styleClass="card-title"/>
