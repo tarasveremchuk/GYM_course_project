@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <property name="LOG_DIR" value="logs" />
+    <property name="LOG_FILE" value="gym-management" />
+    
+    <property name="EMAIL_HOST" value="smtp.gmail.com" />
+    <property name="EMAIL_PORT" value="587" />
+    <property name="EMAIL_FROM" value="your-email@gmail.com" />
+    <property name="EMAIL_TO" value="admin@example.com" />
+    <property name="EMAIL_USERNAME" value="your-email@gmail.com" />
+    <property name="EMAIL_PASSWORD" value="your-app-password" />
+    <property name="EMAIL_SUBJECT" value="[GYM MANAGEMENT] КРИТИЧНА ПОМИЛКА" />
+
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %highlight(%-5level) %cyan(%logger{36}) - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_DIR}/${LOG_FILE}.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_DIR}/${LOG_FILE}.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>90</maxHistory> 
+            <totalSizeCap>3GB</totalSizeCap> 
+        </rollingPolicy>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    
+    <turboFilter class="ch.qos.logback.classic.turbo.MarkerFilter">
+        <Name>STACK_TRACE_FILTER</Name>
+        <Marker>STACK_TRACE</Marker>
+        <OnMatch>DENY</OnMatch>
+    </turboFilter>
+    
+    <appender name="EMAIL" class="ch.qos.logback.classic.net.SMTPAppender">
+        <smtpHost>${EMAIL_HOST}</smtpHost>
+        <smtpPort>${EMAIL_PORT}</smtpPort>
+        <STARTTLS>true</STARTTLS>
+        <username>${EMAIL_USERNAME}</username>
+        <password>${EMAIL_PASSWORD}</password>
+        <to>${EMAIL_TO}</to>
+        <from>${EMAIL_FROM}</from>
+        <subject>${EMAIL_SUBJECT}</subject>
+        <asynchronousSending>false</asynchronousSending>
+        
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>ERROR</level>
+        </filter>
+        
+        <cyclicBufferTracker class="ch.qos.logback.core.spi.CyclicBufferTracker">
+            <bufferSize>20</bufferSize>
+        </cyclicBufferTracker>
+        
+        <layout class="ch.qos.logback.classic.html.HTMLLayout">
+            <pattern>%date%level%logger{36}%msg</pattern>
+        </layout>
+    </appender>
+    
+    <appender name="ASYNC_FILE" class="ch.qos.logback.classic.AsyncAppender">
+        <appender-ref ref="FILE" />
+        <queueSize>512</queueSize>
+        <discardingThreshold>0</discardingThreshold>
+    </appender>
+    
+    <turboFilter class="ch.qos.logback.classic.turbo.MarkerFilter">
+        <Name>FRAMEWORK_FILTER</Name>
+        <Marker>FRAMEWORK</Marker>
+        <OnMatch>DENY</OnMatch>
+    </turboFilter>
+
+    <logger name="com.gym" level="DEBUG" />
+    <logger name="com.gym.controller" level="INFO" />
+    <logger name="com.gym.dao" level="INFO" />
+    <logger name="com.gym.util" level="INFO" />
+    
+    <logger name="org.hibernate" level="ERROR" />
+    <logger name="com.mchange" level="ERROR" />
+    <logger name="javafx" level="ERROR" />
+    <logger name="org.postgresql" level="ERROR" />
+    <logger name="com.sun.javafx" level="ERROR" />
+    
+    <logger name="com.gym.error" level="ERROR" additivity="false">
+        <appender-ref ref="CONSOLE" />
+        <appender-ref ref="ASYNC_FILE" />
+        <appender-ref ref="EMAIL" />
+    </logger>
+
+    <root level="INFO">
+        <appender-ref ref="CONSOLE" />
+        <appender-ref ref="ASYNC_FILE" />
+    </root>
+</configuration>

@@ -1,0 +1,281 @@
+.dialog-root {
+    -fx-background-color: #1a1a1a;
+    -fx-padding: 20;
+    -fx-spacing: 20;
+}
+
+.dialog-title {
+    -fx-fill: #FFD700;
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Segoe UI";
+    -fx-padding: 0 0 20 0;
+}
+
+/* Photo Section */
+.photo-section {
+    -fx-background-color: #242424;
+    -fx-background-radius: 10;
+    -fx-padding: 20;
+    -fx-alignment: center;
+    -fx-spacing: 15;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0, 0, 0);
+}
+
+.photo-preview {
+    -fx-background-color: #333333;
+    -fx-background-radius: 75;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 10, 0, 0, 0);
+    -fx-fit-width: 180;
+    -fx-fit-height: 180;
+    -fx-preserve-ratio: true;
+}
+
+.upload-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #FFD700;
+    -fx-border-color: #FFD700;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-padding: 10 25;
+    -fx-cursor: hand;
+    -fx-font-size: 14px;
+}
+
+.upload-button:hover {
+    -fx-background-color: #FFD700;
+    -fx-text-fill: #1a1a1a;
+}
+
+.upload-button:hover .upload-icon {
+    -fx-fill: #1a1a1a;
+}
+
+.upload-icon {
+    -fx-fill: #FFD700;
+    -glyph-size: 16px;
+}
+
+/* Form Fields */
+.field-label {
+    -fx-text-fill: #FFD700;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.field-input {
+    -fx-background-color: #242424;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: #808080;
+    -fx-background-radius: 5;
+    -fx-padding: 10 15;
+    -fx-font-size: 14px;
+}
+
+.field-input:focused {
+    -fx-background-color: #2a2a2a;
+    -fx-border-color: #FFD700;
+    -fx-border-radius: 5;
+    -fx-border-width: 1;
+}
+
+/* Date Picker Styling */
+.date-picker {
+    -fx-background-color: #242424;
+}
+
+.date-picker .arrow-button {
+    -fx-background-color: #333333;
+}
+
+.date-picker .arrow-button:hover {
+    -fx-background-color: #FFD700;
+}
+
+.date-picker .arrow-button .arrow {
+    -fx-background-color: #FFD700;
+}
+
+.date-picker .text-field {
+    -fx-background-color: #242424;
+    -fx-text-fill: white;
+}
+
+.date-picker .text-field:focused {
+    -fx-background-color: #2a2a2a;
+    -fx-border-color: #FFD700;
+    -fx-border-radius: 3;
+}
+
+.date-picker .cell {
+    -fx-background-color: #242424;
+    -fx-text-fill: white;
+}
+
+.date-picker .cell:hover {
+    -fx-background-color: #FFD700;
+    -fx-text-fill: #1a1a1a;
+}
+
+.date-picker .cell:focused {
+    -fx-background-color: #2a2a2a;
+}
+
+.date-picker .selected {
+    -fx-background-color: #FFD700;
+    -fx-text-fill: #1a1a1a;
+}
+
+.date-picker .selected:focused {
+    -fx-background-color: #FFD700;
+    -fx-text-fill: #1a1a1a;
+}
+
+.date-picker-popup {
+    -fx-background-color: #242424;
+}
+
+.date-picker-popup .month-year-pane {
+    -fx-background-color: #242424;
+}
+
+.date-picker-popup .month-year-pane .label {
+    -fx-text-fill: white;
+}
+
+.date-picker-popup .week-number-cell {
+    -fx-text-fill: #808080;
+    -fx-background-color: #242424;
+}
+
+/* ComboBox Styling */
+.combo-box {
+    -fx-background-color: #242424;
+}
+
+.combo-box .list-cell {
+    -fx-text-fill: white;
+    -fx-background-color: #242424;
+}
+
+.combo-box .list-view {
+    -fx-background-color: #242424;
+}
+
+.combo-box .list-cell:hover {
+    -fx-background-color: #FFD700;
+    -fx-text-fill: #1a1a1a;
+}
+
+/* Error Label */
+.error-label {
+    -fx-text-fill: #f44336;
+    -fx-font-size: 13px;
+    -fx-padding: 10 0;
+}
+
+/* Buttons */
+.save-button {
+    -fx-background-color: #FFD700;
+    -fx-text-fill: #1a1a1a;
+    -fx-background-radius: 20;
+    -fx-padding: 12 35;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+.save-button:hover {
+    -fx-background-color: #FFE44D;
+}
+
+.cancel-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #FFD700;
+    -fx-border-color: #FFD700;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-padding: 12 25;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+}
+
+.cancel-button:hover {
+    -fx-background-color: #FFD700;
+    -fx-text-fill: #1a1a1a;
+}
+
+/* Details View Styles */
+.details-value {
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+}
+
+.details-value.text-area {
+    -fx-background-color: #242424;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+}
+
+.details-value.text-area .content {
+    -fx-background-color: #242424;
+}
+
+.details-value.text-area:focused {
+    -fx-background-color: #242424;
+}
+
+.details-value.text-area .viewport {
+    -fx-background-color: #242424;
+}
+
+.details-value.text-area .scroll-pane {
+    -fx-background-color: #242424;
+}
+
+.details-value.text-area .scroll-pane .viewport {
+    -fx-background-color: #242424;
+}
+
+/* Medical Notes TextArea Styling */
+.field-input.text-area {
+    -fx-background-color: #242424;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: #808080;
+}
+
+.field-input.text-area .content {
+    -fx-background-color: #242424;
+}
+
+.field-input.text-area:focused {
+    -fx-background-color: #2a2a2a;
+}
+
+.field-input.text-area .viewport {
+    -fx-background-color: #242424;
+}
+
+.field-input.text-area .scroll-pane {
+    -fx-background-color: #242424;
+}
+
+.field-input.text-area .scroll-pane .viewport {
+    -fx-background-color: #242424;
+}
+
+.field-input.text-area .scroll-pane .content {
+    -fx-background-color: #242424;
+}
+
+.field-input.text-area .scroll-bar:vertical {
+    -fx-background-color: #242424;
+}
+
+.field-input.text-area .scroll-bar:vertical .thumb {
+    -fx-background-color: #333333;
+}
+
+.field-input.text-area .scroll-bar:vertical .thumb:hover {
+    -fx-background-color: #FFD700;
+} 

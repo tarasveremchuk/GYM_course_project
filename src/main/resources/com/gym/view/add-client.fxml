@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox spacing="10" alignment="CENTER" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.gym.controller.AddClientController"
+      stylesheets="@../styles/styles.css">
+    
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <VBox fx:id="formBox" spacing="5">
+        <Label text="Name:"/>
+        <TextField fx:id="nameField"/>
+        
+        <Label text="Email:"/>
+        <TextField fx:id="emailField"/>
+        
+        <Label text="Phone:"/>
+        <TextField fx:id="phoneField"/>
+        
+        <Label text="Birth Date:"/>
+        <DatePicker fx:id="birthDatePicker"/>
+        
+        <Label text="Username:"/>
+        <TextField fx:id="usernameField"/>
+        
+        <Label text="Password:"/>
+        <PasswordField fx:id="passwordField"/>
+    </VBox>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button fx:id="saveButton" text="Save" onAction="#handleSave"
+                styleClass="button-primary"/>
+        <Button fx:id="cancelButton" text="Cancel" onAction="#handleCancel"
+                styleClass="button-secondary"/>
+    </HBox>
+</VBox>

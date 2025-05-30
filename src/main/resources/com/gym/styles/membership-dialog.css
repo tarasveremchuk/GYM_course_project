@@ -1,0 +1,134 @@
+.dialog-root {
+    -fx-background-color: #242424;
+}
+
+.dialog-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-fill: #FFD700;
+}
+
+.field-label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFD700;
+}
+
+.field-input {
+    -fx-background-color: #2a2a2a;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-pref-height: 35px;
+    -fx-max-width: Infinity;
+}
+
+.field-input:focused {
+    -fx-background-color: #333333;
+    -fx-border-color: #FFD700;
+    -fx-border-width: 1px;
+}
+
+.combo-box {
+    -fx-background-color: #2a2a2a;
+    -fx-text-fill: white;
+}
+
+.combo-box .cell {
+    -fx-background-color: #2a2a2a;
+    -fx-text-fill: white;
+}
+
+.combo-box .list-view {
+    -fx-background-color: #2a2a2a;
+}
+
+.combo-box .list-cell:hover {
+    -fx-background-color: #404040;
+}
+
+.date-picker {
+    -fx-background-color: #2a2a2a;
+}
+
+.date-picker .text-field {
+    -fx-background-color: #2a2a2a;
+    -fx-text-fill: white;
+}
+
+.date-picker .arrow-button {
+    -fx-background-color: #404040;
+}
+
+.date-picker .arrow-button:hover {
+    -fx-background-color: #505050;
+}
+
+.spinner {
+    -fx-background-color: #2a2a2a;
+}
+
+.spinner .text-field {
+    -fx-background-color: #2a2a2a;
+    -fx-text-fill: white;
+}
+
+.spinner .increment-arrow-button,
+.spinner .decrement-arrow-button {
+    -fx-background-color: #404040;
+}
+
+.spinner .increment-arrow-button:hover,
+.spinner .decrement-arrow-button:hover {
+    -fx-background-color: #505050;
+}
+
+.check-box {
+    -fx-text-fill: white;
+}
+
+.check-box .box {
+    -fx-background-color: #2a2a2a;
+    -fx-border-color: #FFD700;
+}
+
+.check-box:selected .mark {
+    -fx-background-color: #FFD700;
+}
+
+.text-area {
+    -fx-background-color: #2a2a2a;
+    -fx-text-fill: white;
+}
+
+.text-area .content {
+    -fx-background-color: #2a2a2a;
+}
+
+.error-label {
+    -fx-text-fill: #ff6b6b;
+    -fx-font-size: 12px;
+    -fx-padding: 5 0;
+}
+
+.save-button {
+    -fx-background-color: #FFD700;
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 8 20;
+}
+
+.save-button:hover {
+    -fx-background-color: #FFE55C;
+}
+
+.cancel-button {
+    -fx-background-color: #404040;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 8 20;
+}
+
+.cancel-button:hover {
+    -fx-background-color: #505050;
+} 

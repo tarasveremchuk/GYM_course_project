@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.*?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.gym.controller.TrainingDetailsController"
+            stylesheets="@../styles/training-details.css"
+            styleClass="root">
+
+    <VBox spacing="20" AnchorPane.topAnchor="20" AnchorPane.rightAnchor="20" 
+          AnchorPane.bottomAnchor="20" AnchorPane.leftAnchor="20">
+        
+        <!-- Header -->
+        <HBox alignment="CENTER_LEFT" spacing="20">
+            <Text fx:id="trainingNameText" styleClass="header-text"/>
+            <Region HBox.hgrow="ALWAYS"/>
+            <Button styleClass="close-button" onAction="#handleClose">
+                <graphic>
+                    <FontAwesomeIconView glyphName="TIMES" styleClass="close-icon"/>
+                </graphic>
+            </Button>
+        </HBox>
+
+        <!-- Training Info -->
+        <GridPane styleClass="info-grid" hgap="15" vgap="10">
+            <columnConstraints>
+                <ColumnConstraints minWidth="100" prefWidth="120"/>
+                <ColumnConstraints hgrow="ALWAYS"/>
+            </columnConstraints>
+
+            <Label text="Description:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <Text fx:id="descriptionText" wrappingWidth="400" 
+                  GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+            <Label text="Trainer:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <Text fx:id="trainerText" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+            <Label text="Date &amp; Time:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <Text fx:id="dateTimeText" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+            <Label text="Duration:" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+            <Text fx:id="durationText" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+            <Label text="Capacity:" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+            <Text fx:id="capacityText" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+        </GridPane>
+
+        <!-- Bookings Section -->
+        <VBox spacing="10">
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <Text styleClass="section-header" text="Bookings"/>
+                <Region HBox.hgrow="ALWAYS"/>
+                <Button fx:id="addBookingButton" styleClass="add-button" onAction="#handleAddBooking">
+                    <graphic>
+                        <HBox spacing="5" alignment="CENTER">
+                            <FontAwesomeIconView glyphName="PLUS" styleClass="add-icon"/>
+                            <Text text="Add Booking" styleClass="button-text"/>
+                        </HBox>
+                    </graphic>
+                </Button>
+            </HBox>
+
+            <TableView fx:id="bookingsTable" styleClass="bookings-table">
+                <columns>
+                    <TableColumn fx:id="clientNameColumn" text="Client Name"/>
+                    <TableColumn fx:id="bookingTimeColumn" text="Booking Time"/>
+                    <TableColumn fx:id="statusColumn" text="Status"/>
+                    <TableColumn fx:id="actionsColumn" text="Actions"/>
+                </columns>
+                <placeholder>
+                    <Label text="No bookings yet" styleClass="placeholder-label"/>
+                </placeholder>
+            </TableView>
+        </VBox>
+
+        <!-- Status Bar -->
+        <HBox spacing="20" styleClass="status-bar">
+            <Label fx:id="totalBookingsLabel" text="Total Bookings: 0"/>
+            <Label fx:id="availableSlotsLabel" text="Available Slots: 0"/>
+        </HBox>
+    </VBox>
+</AnchorPane> 

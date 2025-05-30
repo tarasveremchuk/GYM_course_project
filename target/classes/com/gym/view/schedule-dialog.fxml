@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.gym.controller.ScheduleDialogController"
+      stylesheets="@../styles/schedule-dialog.css"
+      styleClass="schedule-dialog"
+      spacing="20">
+    
+    <padding>
+        <Insets top="30" right="40" bottom="30" left="40"/>
+    </padding>
+
+    <!-- Header -->
+    <HBox alignment="CENTER">
+        <Text fx:id="staffNameText" styleClass="staff-name"/>
+    </HBox>
+
+    <!-- Schedule Grid -->
+    <GridPane fx:id="scheduleGrid" hgap="10" vgap="10">
+        <columnConstraints>
+            <ColumnConstraints hgrow="NEVER" minWidth="100"/>
+            <ColumnConstraints hgrow="ALWAYS"/>
+        </columnConstraints>
+
+        <!-- Days of the week -->
+        <Label text="Monday:" styleClass="day-label" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <TextField fx:id="mondayField" styleClass="schedule-field" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+        <Label text="Tuesday:" styleClass="day-label" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <TextField fx:id="tuesdayField" styleClass="schedule-field" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+        <Label text="Wednesday:" styleClass="day-label" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        <TextField fx:id="wednesdayField" styleClass="schedule-field" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+        <Label text="Thursday:" styleClass="day-label" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+        <TextField fx:id="thursdayField" styleClass="schedule-field" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+
+        <Label text="Friday:" styleClass="day-label" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+        <TextField fx:id="fridayField" styleClass="schedule-field" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+
+        <Label text="Saturday:" styleClass="day-label" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+        <TextField fx:id="saturdayField" styleClass="schedule-field" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+
+        <Label text="Sunday:" styleClass="day-label" GridPane.columnIndex="0" GridPane.rowIndex="6"/>
+        <TextField fx:id="sundayField" styleClass="schedule-field" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+    </GridPane>
+
+    <!-- Error Label -->
+    <Label fx:id="errorLabel" styleClass="error-label" wrapText="true"/>
+
+    <!-- Buttons -->
+    <HBox spacing="10" alignment="CENTER_RIGHT">
+        <Button fx:id="cancelButton" text="Close" styleClass="cancel-button" onAction="#handleClose"/>
+        <Button fx:id="saveButton" text="Save" styleClass="save-button" onAction="#handleSave"/>
+    </HBox>
+</VBox> 

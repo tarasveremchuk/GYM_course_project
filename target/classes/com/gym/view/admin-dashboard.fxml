@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.*?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.gym.controller.AdminDashboardController"
+            stylesheets="@../styles/admin-dashboard.css"
+            styleClass="root">
+
+    <top>
+        <HBox styleClass="top-bar" alignment="CENTER_LEFT" spacing="20">
+            <padding>
+                <Insets top="20" right="30" bottom="20" left="30"/>
+            </padding>
+            <Text styleClass="header-text" text="Admin Dashboard"/>
+            <Region HBox.hgrow="ALWAYS"/>
+            <Label fx:id="usernameLabel" styleClass="username-label"/>
+            <Button fx:id="logoutButton" text="Logout" styleClass="logout-button" onAction="#handleLogout"/>
+        </HBox>
+    </top>
+
+    <center>
+        <ScrollPane fitToWidth="true" styleClass="dashboard-scroll">
+            <GridPane styleClass="dashboard-grid" hgap="20" vgap="20">
+                <padding>
+                    <Insets top="30" right="30" bottom="30" left="30"/>
+                </padding>
+
+                <!-- Clients Management Card -->
+                <VBox styleClass="dashboard-card" onMouseClicked="#handleClientsManagement" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                    <FontAwesomeIconView glyphName="USERS" styleClass="card-icon"/>
+                    <Text text="Clients Management" styleClass="card-title"/>
+                    <Text text="Manage gym members and their information" styleClass="card-description"/>
+                </VBox>
+
+                <!-- Staff Management Card -->
+                <VBox styleClass="dashboard-card" onMouseClicked="#handleStaffManagement" GridPane.columnIndex="1" GridPane.rowIndex="0">
+                    <FontAwesomeIconView glyphName="ID_CARD" styleClass="card-icon"/>
+                    <Text text="Staff Management" styleClass="card-title"/>
+                    <Text text="Manage trainers and staff members" styleClass="card-description"/>
+                </VBox>
+
+                <!-- Memberships Card -->
+                <VBox styleClass="dashboard-card" onMouseClicked="#handleMemberships" GridPane.columnIndex="0" GridPane.rowIndex="1">
+                    <FontAwesomeIconView glyphName="CREDIT_CARD" styleClass="card-icon"/>
+                    <Text text="Memberships" styleClass="card-title"/>
+                    <Text text="Manage membership plans and subscriptions" styleClass="card-description"/>
+                </VBox>
+
+                <!-- Training Schedule Card -->
+                <VBox styleClass="dashboard-card" onMouseClicked="#handleTrainingSchedule" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <FontAwesomeIconView glyphName="CALENDAR" styleClass="card-icon"/>
+                    <Text text="Training Schedule" styleClass="card-title"/>
+                    <Text text="Manage training sessions and schedules" styleClass="card-description"/>
+                </VBox>
+
+                <!-- Reports Card -->
+                <VBox styleClass="dashboard-card" onMouseClicked="#handleReports" GridPane.columnIndex="0" GridPane.rowIndex="2">
+                    <FontAwesomeIconView glyphName="BAR_CHART" styleClass="card-icon"/>
+                    <Text text="Reports" styleClass="card-title"/>
+                    <Text text="View financial and activity reports" styleClass="card-description"/>
+                </VBox>
+
+                <columnConstraints>
+                    <ColumnConstraints percentWidth="50"/>
+                    <ColumnConstraints percentWidth="50"/>
+                </columnConstraints>
+            </GridPane>
+        </ScrollPane>
+    </center>
+</BorderPane> 

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.*?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.gym.controller.MembershipDialogController"
+      stylesheets="@../styles/membership-dialog.css"
+      styleClass="dialog-root"
+      prefWidth="600"
+      prefHeight="600"
+      spacing="20">
+    
+    <padding>
+        <Insets top="30" right="40" bottom="30" left="40"/>
+    </padding>
+
+    <!-- Header -->
+    <HBox alignment="CENTER">
+        <Text fx:id="dialogTitle" styleClass="dialog-title"/>
+    </HBox>
+
+    <!-- Form Fields -->
+    <GridPane hgap="15" vgap="15">
+        <columnConstraints>
+            <ColumnConstraints hgrow="NEVER" minWidth="150"/>
+            <ColumnConstraints hgrow="ALWAYS"/>
+        </columnConstraints>
+
+        <!-- Client Selection -->
+        <Label text="Client:" styleClass="field-label" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <ComboBox fx:id="clientComboBox" styleClass="field-input" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+        <!-- Membership Type -->
+        <Label text="Type:" styleClass="field-label" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <ComboBox fx:id="typeComboBox" styleClass="field-input" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+        <!-- Start Date -->
+        <Label text="Start Date:" styleClass="field-label" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        <DatePicker fx:id="startDatePicker" styleClass="field-input" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+        <!-- End Date -->
+        <Label text="End Date:" styleClass="field-label" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+        <DatePicker fx:id="endDatePicker" styleClass="field-input" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+
+        <!-- Visits Left -->
+        <Label text="Visits Left:" styleClass="field-label" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+        <Spinner fx:id="visitsLeftSpinner" styleClass="field-input" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+
+        <!-- Price -->
+        <Label text="Price:" styleClass="field-label" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+        <TextField fx:id="priceField" styleClass="field-input" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+
+        <!-- Payment Status -->
+        <Label text="Payment Status:" styleClass="field-label" GridPane.columnIndex="0" GridPane.rowIndex="6"/>
+        <CheckBox fx:id="isPaidCheckBox" text="Paid" styleClass="field-input" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+
+        <!-- Comments -->
+        <Label text="Comments:" styleClass="field-label" GridPane.columnIndex="0" GridPane.rowIndex="7"/>
+        <TextArea fx:id="commentsArea" styleClass="field-input" wrapText="true" 
+                  prefRowCount="3" GridPane.columnIndex="1" GridPane.rowIndex="7"/>
+    </GridPane>
+
+    <!-- Error Label -->
+    <Label fx:id="errorLabel" styleClass="error-label" wrapText="true"/>
+
+    <!-- Buttons -->
+    <HBox spacing="10" alignment="CENTER_RIGHT">
+        <Button fx:id="cancelButton" text="Cancel" styleClass="cancel-button" onAction="#handleCancel"/>
+        <Button fx:id="saveButton" text="Save" styleClass="save-button" onAction="#handleSave"/>
+    </HBox>
+</VBox> 
