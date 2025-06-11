@@ -165,7 +165,8 @@ public class ClientsManagementController {
             
             Stage stage = (Stage) searchField.getScene().getWindow();
             stage.setScene(scene);
-            stage.setMaximized(true);
+            stage.setWidth(1200);
+            stage.setHeight(800);
             stage.centerOnScreen();
         } catch (Exception e) {
             log.error("Error returning to dashboard: ", e);

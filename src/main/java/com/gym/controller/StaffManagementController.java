@@ -191,7 +191,8 @@ public class StaffManagementController {
             stage.initOwner(searchField.getScene().getWindow());
             
             // Ensure the window size matches the admin panel
-            stage.setMaximized(true);
+            stage.setWidth(1200);
+            stage.setHeight(800);
             stage.centerOnScreen();
             
             Scene scene = new Scene(root);
@@ -222,7 +223,8 @@ public class StaffManagementController {
             stage.initOwner(searchField.getScene().getWindow());
             
             // Ensure the window size matches the admin panel
-            stage.setMaximized(true);
+            stage.setWidth(1200);
+            stage.setHeight(800);
             stage.centerOnScreen();
             
             Scene scene = new Scene(root);

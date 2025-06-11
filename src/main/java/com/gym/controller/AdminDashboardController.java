@@ -38,7 +38,8 @@ public class AdminDashboardController {
             
             Stage stage = (Stage) usernameLabel.getScene().getWindow();
             stage.setScene(scene);
-            stage.setMaximized(true);
+            stage.setWidth(1200);  
+            stage.setHeight(800); 
             stage.centerOnScreen(); 
             
             log.info("Opened Clients Management view");
@@ -57,7 +58,8 @@ public class AdminDashboardController {
             
             Stage stage = (Stage) usernameLabel.getScene().getWindow();
             stage.setScene(scene);
-            stage.setMaximized(true);
+            stage.setWidth(1200);  
+            stage.setHeight(800); 
             stage.centerOnScreen(); 
             
             log.info("Opened Staff Management view");
@@ -76,7 +78,7 @@ public class AdminDashboardController {
             
             Stage stage = (Stage) usernameLabel.getScene().getWindow();
             stage.setScene(scene);
-            stage.setMaximized(true);
+            
             log.info("Opened Memberships Management view");
         } catch (Exception e) {
             log.error("Error opening Memberships view: ", e);
@@ -93,7 +95,11 @@ public class AdminDashboardController {
            
             Stage stage = (Stage) usernameLabel.getScene().getWindow();
             stage.setScene(scene);
-            stage.setMaximized(true);
+            
+
+            stage.setWidth(1200.0);
+            stage.setHeight(800.0);
+            
             stage.centerOnScreen();
 
             
@@ -117,9 +123,8 @@ public class AdminDashboardController {
             Scene scene = stage.getScene();
             scene.getStylesheets().add(getClass().getResource("/com/gym/styles/reports.css").toExternalForm());
             
-            // Ensure the Reports window is fullscreen
-            stage.setMaximized(true);
-            
+            stage.setMinWidth(1200);
+            stage.setMinHeight(800);
             stage.initModality(Modality.WINDOW_MODAL);
             stage.initOwner(usernameLabel.getScene().getWindow());
             
