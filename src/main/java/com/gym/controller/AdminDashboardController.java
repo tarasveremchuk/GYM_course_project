@@ -123,8 +123,11 @@ public class AdminDashboardController {
             Scene scene = stage.getScene();
             scene.getStylesheets().add(getClass().getResource("/com/gym/styles/reports.css").toExternalForm());
             
-            stage.setMinWidth(1200);
-            stage.setMinHeight(800);
+            // Ensure the Reports window size matches the admin panel
+            stage.setWidth(1200);
+            stage.setHeight(800);
+            stage.centerOnScreen();
+            
             stage.initModality(Modality.WINDOW_MODAL);
             stage.initOwner(usernameLabel.getScene().getWindow());
             

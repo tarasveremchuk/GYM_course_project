@@ -384,6 +384,9 @@ public class TrainingScheduleController {
             Scene scene = new Scene(root);
             Stage stage = (Stage) trainingsTable.getScene().getWindow();
             stage.setScene(scene);
+            stage.setWidth(1200);
+            stage.setHeight(800);
+            stage.centerOnScreen();
         } catch (Exception e) {
             log.error("Error returning to dashboard: ", e);
             showError("Error", "Could not return to dashboard", e.getMessage());

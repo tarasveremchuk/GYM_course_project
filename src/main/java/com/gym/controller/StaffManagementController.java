@@ -190,10 +190,10 @@ public class StaffManagementController {
             stage.initModality(Modality.WINDOW_MODAL);
             stage.initOwner(searchField.getScene().getWindow());
             
-            
-            stage.setWidth(800);
-            stage.setHeight(1000);  
-            stage.setResizable(false);
+            // Ensure the window size matches the admin panel
+            stage.setWidth(1200);
+            stage.setHeight(800);
+            stage.centerOnScreen();
             
             Scene scene = new Scene(root);
             stage.setScene(scene);
@@ -222,10 +222,10 @@ public class StaffManagementController {
             stage.initModality(Modality.WINDOW_MODAL);
             stage.initOwner(searchField.getScene().getWindow());
             
-            
-            stage.setWidth(800);
-            stage.setHeight(1000);  
-            stage.setResizable(false);
+            // Ensure the window size matches the admin panel
+            stage.setWidth(1200);
+            stage.setHeight(800);
+            stage.centerOnScreen();
             
             Scene scene = new Scene(root);
             stage.setScene(scene);
