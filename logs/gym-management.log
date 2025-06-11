@@ -4121,3 +4121,13 @@ Caused by: java.lang.Error: Unresolved compilation problems:
 	at com.gym.controller.AdminDashboardController.<init>(AdminDashboardController.java:3)
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	... 42 common frames omitted
+2025-06-11 20:47:27.678 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Database properties loaded successfully from database.properties
+2025-06-11 20:47:27.690 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database driver: org.postgresql.Driver
+2025-06-11 20:47:27.690 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:47:27.690 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database username: neondb_owner
+2025-06-11 20:47:27.690 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database password: ****************
+2025-06-11 20:47:27.690 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:47:27.690 [JavaFX Application Thread] INFO  com.gym.util.EntityManagerUtil - Setting up JPA with URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:47:37.517 [JavaFX Application Thread] INFO  com.gym.util.EntityManagerUtil - JPA EntityManagerFactory created successfully
+2025-06-11 20:47:45.598 [JavaFX Application Thread] INFO  com.gym.controller.LoginController - User lemko logged in successfully with role admin
+2025-06-11 20:47:58.687 [JavaFX Application Thread] INFO  c.g.c.AdminDashboardController - User logged out successfully

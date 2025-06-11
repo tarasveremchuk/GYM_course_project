@@ -62,8 +62,8 @@
                 </VBox>
 
                 <columnConstraints>
-                    <ColumnConstraints percentWidth="50"/>
-                    <ColumnConstraints percentWidth="50"/>
+                    <ColumnConstraints hgrow="ALWAYS" />
+                    <ColumnConstraints hgrow="ALWAYS" />
                 </columnConstraints>
             </GridPane>
         </ScrollPane>
