@@ -111,7 +111,6 @@ public class TrainingDialogController {
             List<Staff> trainers = staffDao.findTrainers();
             trainerComboBox.setItems(FXCollections.observableArrayList(trainers));
             
-            
             trainerComboBox.setCellFactory(param -> new ListCell<Staff>() {
                 @Override
                 protected void updateItem(Staff item, boolean empty) {
@@ -123,7 +122,6 @@ public class TrainingDialogController {
                     }
                 }
             });
-            
             
             trainerComboBox.setButtonCell(new ListCell<Staff>() {
                 @Override
@@ -154,6 +152,17 @@ public class TrainingDialogController {
             nameField.setText(training.getName());
             descriptionArea.setText(training.getDescription());
             trainerComboBox.setValue(training.getTrainer());
+            trainerComboBox.setButtonCell(new ListCell<Staff>() {
+                @Override
+                protected void updateItem(Staff item, boolean empty) {
+                    super.updateItem(item, empty);
+                    if (empty || item == null) {
+                        setText(null);
+                    } else {
+                        setText(item.getFullName());
+                    }
+                }
+            });
             
             LocalDateTime scheduledAt = training.getScheduledAt();
             datePicker.setValue(scheduledAt.toLocalDate());

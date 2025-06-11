@@ -102,7 +102,7 @@ public class MembershipsManagementController {
             @Override
             protected void updateItem(Boolean isPaid, boolean empty) {
                 super.updateItem(isPaid, empty);
-                if (empty) {
+                if (empty || isPaid == null) {
                     setText(null);
                     setGraphic(null);
                 } else {
@@ -225,7 +225,8 @@ public class MembershipsManagementController {
         int active = (int) memberships.stream()
                 .filter(m -> {
                     LocalDate now = LocalDate.now();
-                    return m.getEndDate().isAfter(now) || m.getEndDate().isEqual(now);
+                    LocalDate endDate = m.getEndDate();
+                    return endDate != null && (endDate.isAfter(now) || endDate.isEqual(now));
                 })
                 .count();
         int unpaid = (int) memberships.stream()

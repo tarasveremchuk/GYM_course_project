@@ -76,9 +76,15 @@ public class ClientDashboardController {
     private void handleLogout() {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/gym/view/login.fxml"));
-            Scene scene = new Scene(loader.load());
+            Parent root = loader.load();
+            
+            double prefWidth = root.prefWidth(-1);
+            double prefHeight = root.prefHeight(-1);
+            
+            Scene scene = new Scene(root);
             Stage stage = (Stage) logoutButton.getScene().getWindow();
             stage.setScene(scene);
+            stage.sizeToScene();
             stage.centerOnScreen();
         } catch (IOException e) {
             log.error("Error loading login view", e);

@@ -1,0 +1,242 @@
+2025-06-06 15:00:59.661 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Database properties loaded successfully from database.properties
+2025-06-06 15:00:59.665 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database driver: org.postgresql.Driver
+2025-06-06 15:00:59.665 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://localhost:5433/gym
+2025-06-06 15:00:59.665 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database username: postgres
+2025-06-06 15:00:59.665 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database password: ********
+2025-06-06 15:00:59.666 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://localhost:5433/gym
+2025-06-06 15:00:59.666 [JavaFX Application Thread] INFO  com.gym.util.EntityManagerUtil - Setting up JPA with URL: jdbc:postgresql://localhost:5433/gym
+2025-06-06 15:01:03.804 [JavaFX Application Thread] INFO  com.gym.util.EntityManagerUtil - JPA EntityManagerFactory created successfully
+2025-06-06 15:02:31.596 [JavaFX Application Thread] INFO  com.gym.controller.LoginController - User lemko logged in successfully with role admin
+2025-06-06 15:08:13.636 [JavaFX Application Thread] INFO  c.g.c.AdminDashboardController - Opening Clients Management...
+2025-06-06 15:08:13.721 [JavaFX Application Thread] INFO  com.gym.service.ClientService - Retrieving all clients
+2025-06-06 15:08:13.812 [JavaFX Application Thread] INFO  c.g.c.ClientsManagementController - Loaded 5 clients from database
+2025-06-06 15:08:13.825 [JavaFX Application Thread] INFO  c.g.c.AdminDashboardController - Opened Clients Management view
+2025-06-06 15:10:37.153 [JavaFX Application Thread] ERROR c.g.c.ClientDetailsDialogController - Error loading client details: Input stream must not be null
+java.lang.NullPointerException: Input stream must not be null
+	at javafx.graphics/javafx.scene.image.Image.validateInputStream(Image.java:1142)
+	at javafx.graphics/javafx.scene.image.Image.<init>(Image.java:705)
+	at com.gym.controller.ClientDetailsDialogController.setClient(ClientDetailsDialogController.java:57)
+	at com.gym.controller.ClientsManagementController.handleViewClient(ClientsManagementController.java:303)
+	at com.gym.controller.ClientsManagementController$2.lambda$new$2(ClientsManagementController.java:128)
+	at javafx.base/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)
+	at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at javafx.base/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.base/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics/javafx.scene.Node.fireEvent(Node.java:8792)
+	at javafx.controls/javafx.scene.control.Button.fire(Button.java:203)
+	at javafx.controls/com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:208)
+	at javafx.controls/com.sun.javafx.scene.control.inputmap.InputMap.handle(InputMap.java:274)
+	at javafx.base/com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247)
+	at javafx.base/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)
+	at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at javafx.base/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.base/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics/javafx.scene.Scene$MouseHandler.process(Scene.java:3897)
+	at javafx.graphics/javafx.scene.Scene.processMouseEvent(Scene.java:1878)
+	at javafx.graphics/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2623)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450)
+	at javafx.graphics/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449)
+	at javafx.graphics/com.sun.glass.ui.View.handleMouseEvent(View.java:557)
+	at javafx.graphics/com.sun.glass.ui.View.notifyMouse(View.java:943)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:184)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+2025-06-06 15:10:38.754 [JavaFX Application Thread] INFO  c.g.c.ClientsManagementController - Showing details for client: Markiyan Kits
+2025-06-06 15:10:40.261 [JavaFX Application Thread] INFO  c.g.c.ClientDetailsDialogController - Client details loaded successfully for: Mykola Borovets
+2025-06-06 15:11:14.581 [JavaFX Application Thread] INFO  c.g.c.ClientsManagementController - Showing details for client: Mykola Borovets
+2025-06-06 15:11:32.456 [JavaFX Application Thread] INFO  com.gym.service.ClientService - Updating existing client ID: 43
+2025-06-06 15:11:32.456 [JavaFX Application Thread] INFO  com.gym.dao.impl.ClientDao - Saving client with user_id: 37
+2025-06-06 15:11:32.533 [JavaFX Application Thread] INFO  com.gym.dao.impl.ClientDao - Updated existing client with ID: 43
+2025-06-06 15:11:32.562 [JavaFX Application Thread] INFO  c.g.c.ClientsManagementController - Client updated: Mykola Borovets
+2025-06-06 15:11:38.278 [JavaFX Application Thread] INFO  com.gym.service.ClientService - Retrieving all clients
+2025-06-06 15:11:38.288 [JavaFX Application Thread] INFO  c.g.c.ClientsManagementController - Loaded 5 clients from database
+2025-06-06 15:12:25.335 [JavaFX Application Thread] INFO  c.g.c.AdminDashboardController - Opening Staff Management...
+2025-06-06 15:12:25.377 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database driver: org.postgresql.Driver
+2025-06-06 15:12:25.377 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - PostgreSQL JDBC Driver successfully registered
+2025-06-06 15:12:25.377 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://localhost:5433/gym
+2025-06-06 15:12:25.377 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database username: postgres
+2025-06-06 15:12:25.377 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database password: ********
+2025-06-06 15:12:25.377 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Attempting to connect to database with URL: jdbc:postgresql://localhost:5433/gym, username: postgres
+2025-06-06 15:12:25.450 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Successfully established database connection to jdbc:postgresql://localhost:5433/gym
+2025-06-06 15:12:25.467 [JavaFX Application Thread] INFO  c.g.c.StaffManagementController - Loaded 14 staff members from database
+2025-06-06 15:12:25.474 [JavaFX Application Thread] INFO  c.g.c.AdminDashboardController - Opened Staff Management view
+2025-06-06 15:12:47.540 [JavaFX Application Thread] ERROR c.g.controller.StaffDialogController - Error loading default photo: 
+java.lang.NullPointerException: Input stream must not be null
+	at javafx.graphics/javafx.scene.image.Image.validateInputStream(Image.java:1142)
+	at javafx.graphics/javafx.scene.image.Image.<init>(Image.java:705)
+	at com.gym.controller.StaffDialogController.setDefaultPhoto(StaffDialogController.java:259)
+	at com.gym.controller.StaffDialogController.initialize(StaffDialogController.java:65)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:77)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at javafx.base/com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:275)
+	at javafx.fxml/com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:84)
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2673)
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2548)
+	at javafx.fxml/javafx.fxml.FXMLLoader.load(FXMLLoader.java:2516)
+	at com.gym.controller.StaffManagementController.handleEditStaff(StaffManagementController.java:218)
+	at com.gym.controller.StaffManagementController$1.lambda$new$0(StaffManagementController.java:132)
+	at javafx.base/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)
+	at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at javafx.base/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.base/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics/javafx.scene.Node.fireEvent(Node.java:8792)
+	at javafx.controls/javafx.scene.control.Button.fire(Button.java:203)
+	at javafx.controls/com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:208)
+	at javafx.controls/com.sun.javafx.scene.control.inputmap.InputMap.handle(InputMap.java:274)
+	at javafx.base/com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247)
+	at javafx.base/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)
+	at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at javafx.base/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.base/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics/javafx.scene.Scene$MouseHandler.process(Scene.java:3897)
+	at javafx.graphics/javafx.scene.Scene.processMouseEvent(Scene.java:1878)
+	at javafx.graphics/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2623)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450)
+	at javafx.graphics/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449)
+	at javafx.graphics/com.sun.glass.ui.View.handleMouseEvent(View.java:557)
+	at javafx.graphics/com.sun.glass.ui.View.notifyMouse(View.java:943)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:184)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+2025-06-06 15:12:47.548 [JavaFX Application Thread] INFO  c.g.controller.StaffDialogController - Editing existing staff member: Sasha
+2025-06-06 15:12:52.912 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://localhost:5433/gym
+2025-06-06 15:12:52.912 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database username: postgres
+2025-06-06 15:12:52.912 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database password: ********
+2025-06-06 15:12:52.912 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Attempting to connect to database with URL: jdbc:postgresql://localhost:5433/gym, username: postgres
+2025-06-06 15:12:53.205 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Successfully established database connection to jdbc:postgresql://localhost:5433/gym
+2025-06-06 15:12:53.211 [JavaFX Application Thread] INFO  c.g.c.StaffManagementController - Loaded 14 staff members from database
+2025-06-06 15:13:34.621 [JavaFX Application Thread] INFO  c.g.c.AdminDashboardController - Opening Training Schedule...
+2025-06-06 15:13:34.783 [JavaFX Application Thread] INFO  c.g.c.AdminDashboardController - Opened Training Schedule view
+2025-06-06 15:15:08.599 [JavaFX Application Thread] INFO  c.g.c.AdminDashboardController - Opening Reports...
+2025-06-06 15:15:08.740 [JavaFX Application Thread] INFO  c.gym.controller.ReportsController - Initializing Reports Controller...
+2025-06-06 15:15:08.740 [JavaFX Application Thread] INFO  c.gym.controller.ReportsController - Date pickers setup completed
+2025-06-06 15:15:08.742 [JavaFX Application Thread] INFO  c.gym.controller.ReportsController - Tables setup completed
+2025-06-06 15:15:08.742 [JavaFX Application Thread] INFO  c.gym.controller.ReportsController - Charts setup completed
+2025-06-06 15:15:08.743 [JavaFX Application Thread] INFO  c.gym.controller.ReportsController - Date picker listeners setup completed
+2025-06-06 15:15:08.743 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://localhost:5433/gym
+2025-06-06 15:15:08.743 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database username: postgres
+2025-06-06 15:15:08.743 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database password: ********
+2025-06-06 15:15:08.743 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Attempting to connect to database with URL: jdbc:postgresql://localhost:5433/gym, username: postgres
+2025-06-06 15:15:08.823 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Successfully established database connection to jdbc:postgresql://localhost:5433/gym
+2025-06-06 15:15:08.836 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://localhost:5433/gym
+2025-06-06 15:15:08.836 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database username: postgres
+2025-06-06 15:15:08.837 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database password: ********
+2025-06-06 15:15:08.837 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Attempting to connect to database with URL: jdbc:postgresql://localhost:5433/gym, username: postgres
+2025-06-06 15:15:08.896 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Successfully established database connection to jdbc:postgresql://localhost:5433/gym
+2025-06-06 15:15:08.924 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://localhost:5433/gym
+2025-06-06 15:15:08.924 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database username: postgres
+2025-06-06 15:15:08.925 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database password: ********
+2025-06-06 15:15:08.925 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Attempting to connect to database with URL: jdbc:postgresql://localhost:5433/gym, username: postgres
+2025-06-06 15:15:08.987 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Successfully established database connection to jdbc:postgresql://localhost:5433/gym
+2025-06-06 15:15:09.003 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://localhost:5433/gym
+2025-06-06 15:15:09.003 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database username: postgres
+2025-06-06 15:15:09.004 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database password: ********
+2025-06-06 15:15:09.004 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Attempting to connect to database with URL: jdbc:postgresql://localhost:5433/gym, username: postgres
+2025-06-06 15:15:09.072 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Successfully established database connection to jdbc:postgresql://localhost:5433/gym
+2025-06-06 15:15:09.083 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://localhost:5433/gym
+2025-06-06 15:15:09.083 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database username: postgres
+2025-06-06 15:15:09.083 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database password: ********
+2025-06-06 15:15:09.083 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Attempting to connect to database with URL: jdbc:postgresql://localhost:5433/gym, username: postgres
+2025-06-06 15:15:09.171 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Successfully established database connection to jdbc:postgresql://localhost:5433/gym
+2025-06-06 15:15:09.204 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://localhost:5433/gym
+2025-06-06 15:15:09.204 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database username: postgres
+2025-06-06 15:15:09.205 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database password: ********
+2025-06-06 15:15:09.205 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Attempting to connect to database with URL: jdbc:postgresql://localhost:5433/gym, username: postgres
+2025-06-06 15:15:09.313 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Successfully established database connection to jdbc:postgresql://localhost:5433/gym
+2025-06-06 15:15:09.327 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://localhost:5433/gym
+2025-06-06 15:15:09.328 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database username: postgres
+2025-06-06 15:15:09.328 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database password: ********
+2025-06-06 15:15:09.328 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Attempting to connect to database with URL: jdbc:postgresql://localhost:5433/gym, username: postgres
+2025-06-06 15:15:09.422 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Successfully established database connection to jdbc:postgresql://localhost:5433/gym
+2025-06-06 15:15:09.451 [JavaFX Application Thread] INFO  c.gym.controller.ReportsController - Initial data load completed
+2025-06-06 15:16:13.765 [JavaFX Application Thread] INFO  c.g.c.AdminDashboardController - User logged out successfully
+2025-06-06 15:16:20.912 [JavaFX Application Thread] INFO  c.g.c.ClientDashboardController - Initializing client dashboard for user ID: 37 and username: mykolaborovets
+2025-06-06 15:16:20.912 [JavaFX Application Thread] INFO  c.g.c.ClientDashboardController - Loading client data for user ID: 37
+2025-06-06 15:16:20.988 [JavaFX Application Thread] INFO  com.gym.dao.impl.ClientDao - Found client_id 43 for user_id 37
+2025-06-06 15:16:20.997 [JavaFX Application Thread] INFO  com.gym.dao.impl.ClientDao - Found client: Mykola Borovets
+2025-06-06 15:16:20.997 [JavaFX Application Thread] INFO  c.g.c.ClientDashboardController - Found client: Mykola Borovets with email: mykolaborovets@gmail.com and phone: 0984545454
+2025-06-06 15:16:20.997 [JavaFX Application Thread] INFO  c.g.c.ClientDashboardController - Setting medical notes: -
+2025-06-06 15:16:21.032 [JavaFX Application Thread] INFO  c.g.c.ClientDashboardController - Found 0 upcoming and 0 past bookings for client Mykola Borovets
+2025-06-06 15:16:21.158 [JavaFX Application Thread] INFO  com.gym.controller.LoginController - User mykolaborovets logged in successfully with role client
+2025-06-06 15:16:58.919 [JavaFX Application Thread] INFO  com.gym.dao.impl.ClientDao - Found client_id 43 for user_id 37
+2025-06-06 15:16:58.924 [JavaFX Application Thread] INFO  com.gym.dao.impl.ClientDao - Found client: Mykola Borovets
+2025-06-06 15:16:59.002 [JavaFX Application Thread] INFO  c.g.c.AvailableTrainingsController - Loaded 0 booked trainings for client Mykola Borovets
