@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.*?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.gym.controller.TrainingScheduleController"
+            stylesheets="@../styles/training-schedule.css"
+            styleClass="root">
+
+    <top>
+        <VBox spacing="20">
+            <padding>
+                <Insets top="20" right="30" bottom="20" left="30"/>
+            </padding>
+
+            <HBox alignment="CENTER_LEFT" spacing="20">
+                <Button styleClass="back-button" onAction="#handleBack">
+                    <graphic>
+                        <FontAwesomeIconView glyphName="ARROW_LEFT" styleClass="back-icon"/>
+                    </graphic>
+                </Button>
+                <Text styleClass="header-text" text="Training Schedule"/>
+            </HBox>
+
+            <HBox spacing="15" alignment="CENTER_LEFT">
+                <DatePicker fx:id="datePicker" promptText="Select Date"/>
+                <ComboBox fx:id="trainerFilter" promptText="Filter by Trainer"/>
+                <TextField fx:id="searchField" promptText="Search trainings"
+                           styleClass="search-field" HBox.hgrow="ALWAYS"/>
+                <Button styleClass="add-button" onAction="#handleAddTraining">
+                    <graphic>
+                        <HBox spacing="5" alignment="CENTER">
+                            <FontAwesomeIconView glyphName="PLUS" styleClass="add-icon"/>
+                            <Text text="Add Training" styleClass="button-text"/>
+                        </HBox>
+                    </graphic>
+                </Button>
+            </HBox>
+        </VBox>
+    </top>
+
+    <center>
+        <TableView fx:id="trainingsTable" styleClass="trainings-table" VBox.vgrow="ALWAYS">
+            <columns>
+                <TableColumn fx:id="nameColumn" text="Training Name" prefWidth="150"/>
+                <TableColumn fx:id="descriptionColumn" text="Description" prefWidth="200"/>
+                <TableColumn fx:id="trainerColumn" text="Trainer" prefWidth="120"/>
+                <TableColumn fx:id="dateTimeColumn" text="Date &amp; Time" prefWidth="180"/>
+                <TableColumn fx:id="durationColumn" text="Duration" prefWidth="100"/>
+                <TableColumn fx:id="capacityColumn" text="Available Slots" prefWidth="130"/>
+                <TableColumn fx:id="statusColumn" text="Status" prefWidth="100"/>
+                <TableColumn fx:id="actionsColumn" text="Actions" prefWidth="120"/>
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+            </columnResizePolicy>
+            <placeholder>
+                <Label text="No trainings scheduled" styleClass="placeholder-label"/>
+            </placeholder>
+        </TableView>
+    </center>
+
+    <bottom>
+        <HBox spacing="20" styleClass="status-bar">
+            <padding>
+                <Insets top="10" right="30" bottom="10" left="30"/>
+            </padding>
+            <Label fx:id="totalTrainingsLabel" text="Total: 0"/>
+            <Label fx:id="upcomingTrainingsLabel" text="Upcoming: 0"/>
+            <Label fx:id="todayTrainingsLabel" text="Today: 0"/>
+        </HBox>
+    </bottom>
+</BorderPane>

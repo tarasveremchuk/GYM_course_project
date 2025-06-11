@@ -249,6 +249,7 @@ public class MembershipsManagementController {
             dialogStage.initModality(Modality.WINDOW_MODAL);
             dialogStage.initOwner(membershipsTable.getScene().getWindow());
             dialogStage.setResizable(false);
+            dialogStage.setMaximized(true);
             
             Scene scene = new Scene(root);
             dialogStage.setScene(scene);
@@ -281,6 +282,7 @@ public class MembershipsManagementController {
             dialogStage.initModality(Modality.WINDOW_MODAL);
             dialogStage.initOwner(membershipsTable.getScene().getWindow());
             dialogStage.setResizable(false);
+            dialogStage.setMaximized(true);
             
             Scene scene = new Scene(root);
             dialogStage.setScene(scene);
@@ -364,8 +366,7 @@ public class MembershipsManagementController {
             Scene scene = new Scene(root);
             Stage stage = (Stage) membershipsTable.getScene().getWindow();
             stage.setScene(scene);
-            stage.setWidth(1200);
-            stage.setHeight(800);
+            stage.setMaximized(true);
             stage.centerOnScreen();
         } catch (Exception e) {
             log.error("Error returning to dashboard: ", e);

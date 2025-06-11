@@ -384,8 +384,7 @@ public class TrainingScheduleController {
             Scene scene = new Scene(root);
             Stage stage = (Stage) trainingsTable.getScene().getWindow();
             stage.setScene(scene);
-            stage.setWidth(1200);
-            stage.setHeight(800);
+            stage.setMaximized(true); // Make window fullscreen
             stage.centerOnScreen();
         } catch (Exception e) {
             log.error("Error returning to dashboard: ", e);

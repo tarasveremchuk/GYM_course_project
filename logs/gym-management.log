@@ -3330,3 +3330,794 @@ Caused by: java.lang.NullPointerException: Cannot invoke "javafx.scene.layout.VB
 2025-06-11 20:15:53.873 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Successfully established database connection to jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
 2025-06-11 20:15:54.132 [JavaFX Application Thread] INFO  c.gym.controller.ReportsController - Initial data load completed
 2025-06-11 20:16:03.140 [JavaFX Application Thread] INFO  c.g.c.AdminDashboardController - User logged out successfully
+2025-06-11 20:22:17.085 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Database properties loaded successfully from database.properties
+2025-06-11 20:22:17.096 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database driver: org.postgresql.Driver
+2025-06-11 20:22:17.096 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:22:17.096 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database username: neondb_owner
+2025-06-11 20:22:17.096 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database password: ****************
+2025-06-11 20:22:17.096 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:22:17.096 [JavaFX Application Thread] INFO  com.gym.util.EntityManagerUtil - Setting up JPA with URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:22:27.128 [JavaFX Application Thread] INFO  com.gym.util.EntityManagerUtil - JPA EntityManagerFactory created successfully
+2025-06-11 20:22:40.731 [JavaFX Application Thread] INFO  com.gym.controller.LoginController - User lemko logged in successfully with role admin
+2025-06-11 20:22:41.393 [JavaFX Application Thread] INFO  c.g.c.AdminDashboardController - Opening Staff Management...
+2025-06-11 20:22:41.472 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database driver: org.postgresql.Driver
+2025-06-11 20:22:41.472 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - PostgreSQL JDBC Driver successfully registered
+2025-06-11 20:22:41.472 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:22:41.472 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database username: neondb_owner
+2025-06-11 20:22:41.472 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database password: ****************
+2025-06-11 20:22:41.472 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Attempting to connect to database with URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require, username: neondb_owner
+2025-06-11 20:22:42.470 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Successfully established database connection to jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:22:42.716 [JavaFX Application Thread] INFO  c.g.c.StaffManagementController - Loaded 14 staff members from database
+2025-06-11 20:22:42.723 [JavaFX Application Thread] INFO  c.g.c.AdminDashboardController - Opened Staff Management view
+2025-06-11 20:22:44.495 [JavaFX Application Thread] INFO  c.g.c.AdminDashboardController - Opening Clients Management...
+2025-06-11 20:22:44.513 [JavaFX Application Thread] ERROR c.g.c.AdminDashboardController - Error opening Clients Management view: 
+javafx.fxml.LoadException: 
+/C:/GYM%20MANAGEMENT/gym/target/classes/com/gym/view/clients-management.fxml:13
+
+	at javafx.fxml/javafx.fxml.FXMLLoader.constructLoadException(FXMLLoader.java:2707)
+	at javafx.fxml/javafx.fxml.FXMLLoader$ValueElement.processAttribute(FXMLLoader.java:944)
+	at javafx.fxml/javafx.fxml.FXMLLoader$InstanceDeclarationElement.processAttribute(FXMLLoader.java:981)
+	at javafx.fxml/javafx.fxml.FXMLLoader$Element.processStartElement(FXMLLoader.java:230)
+	at javafx.fxml/javafx.fxml.FXMLLoader$ValueElement.processStartElement(FXMLLoader.java:755)
+	at javafx.fxml/javafx.fxml.FXMLLoader.processStartElement(FXMLLoader.java:2808)
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2634)
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2548)
+	at javafx.fxml/javafx.fxml.FXMLLoader.load(FXMLLoader.java:2516)
+	at com.gym.controller.AdminDashboardController.handleClientsManagement(AdminDashboardController.java:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:77)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at javafx.base/com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:275)
+	at javafx.fxml/com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:84)
+	at javafx.fxml/javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1854)
+	at javafx.fxml/javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1724)
+	at javafx.base/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)
+	at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at javafx.base/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.base/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics/javafx.scene.Scene$ClickGenerator.postProcess(Scene.java:3602)
+	at javafx.graphics/javafx.scene.Scene$MouseHandler.process(Scene.java:3906)
+	at javafx.graphics/javafx.scene.Scene.processMouseEvent(Scene.java:1878)
+	at javafx.graphics/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2623)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450)
+	at javafx.graphics/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449)
+	at javafx.graphics/com.sun.glass.ui.View.handleMouseEvent(View.java:557)
+	at javafx.graphics/com.sun.glass.ui.View.notifyMouse(View.java:943)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:184)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at javafx.fxml/javafx.fxml.FXMLLoader$ValueElement.processAttribute(FXMLLoader.java:939)
+	... 49 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The import com.gym.model cannot be resolved
+	The import com.gym.model cannot be resolved
+	The import com.gym.service cannot be resolved
+	ClientStatus cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	ClientStatus cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	ClientService cannot be resolved to a type
+	ClientService cannot be resolved to a type
+	ClientService cannot be resolved to a type
+	ClientStatus cannot be resolved to a type
+	ClientStatus cannot be resolved
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	ClientStatus cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	ClientStatus cannot be resolved to a type
+	Client cannot be resolved to a type
+	ClientStatus cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	ClientService cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	ClientDialogController cannot be resolved to a type
+	Client cannot be resolved to a type
+	ClientDialogController cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	ClientService cannot be resolved to a type
+	ClientService cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	ClientService cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	ClientDetailsDialogController cannot be resolved to a type
+
+	at com.gym.controller.ClientsManagementController.<init>(ClientsManagementController.java:3)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 52 common frames omitted
+2025-06-11 20:22:48.184 [JavaFX Application Thread] INFO  c.g.c.AdminDashboardController - Opening Clients Management...
+2025-06-11 20:22:48.188 [JavaFX Application Thread] ERROR c.g.c.AdminDashboardController - Error opening Clients Management view: 
+javafx.fxml.LoadException: 
+/C:/GYM%20MANAGEMENT/gym/target/classes/com/gym/view/clients-management.fxml:13
+
+	at javafx.fxml/javafx.fxml.FXMLLoader.constructLoadException(FXMLLoader.java:2707)
+	at javafx.fxml/javafx.fxml.FXMLLoader$ValueElement.processAttribute(FXMLLoader.java:944)
+	at javafx.fxml/javafx.fxml.FXMLLoader$InstanceDeclarationElement.processAttribute(FXMLLoader.java:981)
+	at javafx.fxml/javafx.fxml.FXMLLoader$Element.processStartElement(FXMLLoader.java:230)
+	at javafx.fxml/javafx.fxml.FXMLLoader$ValueElement.processStartElement(FXMLLoader.java:755)
+	at javafx.fxml/javafx.fxml.FXMLLoader.processStartElement(FXMLLoader.java:2808)
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2634)
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2548)
+	at javafx.fxml/javafx.fxml.FXMLLoader.load(FXMLLoader.java:2516)
+	at com.gym.controller.AdminDashboardController.handleClientsManagement(AdminDashboardController.java:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:77)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at javafx.base/com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:275)
+	at javafx.fxml/com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:84)
+	at javafx.fxml/javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1854)
+	at javafx.fxml/javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1724)
+	at javafx.base/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)
+	at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at javafx.base/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.base/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics/javafx.scene.Scene$ClickGenerator.postProcess(Scene.java:3602)
+	at javafx.graphics/javafx.scene.Scene$MouseHandler.process(Scene.java:3906)
+	at javafx.graphics/javafx.scene.Scene.processMouseEvent(Scene.java:1878)
+	at javafx.graphics/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2623)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450)
+	at javafx.graphics/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449)
+	at javafx.graphics/com.sun.glass.ui.View.handleMouseEvent(View.java:557)
+	at javafx.graphics/com.sun.glass.ui.View.notifyMouse(View.java:943)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:184)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at javafx.fxml/javafx.fxml.FXMLLoader$ValueElement.processAttribute(FXMLLoader.java:939)
+	... 49 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The import com.gym.model cannot be resolved
+	The import com.gym.model cannot be resolved
+	The import com.gym.service cannot be resolved
+	ClientStatus cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	ClientStatus cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	ClientService cannot be resolved to a type
+	ClientService cannot be resolved to a type
+	ClientService cannot be resolved to a type
+	ClientStatus cannot be resolved to a type
+	ClientStatus cannot be resolved
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	ClientStatus cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	ClientStatus cannot be resolved to a type
+	Client cannot be resolved to a type
+	ClientStatus cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	ClientService cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	ClientDialogController cannot be resolved to a type
+	Client cannot be resolved to a type
+	ClientDialogController cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	ClientService cannot be resolved to a type
+	ClientService cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	ClientService cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	ClientDetailsDialogController cannot be resolved to a type
+
+	at com.gym.controller.ClientsManagementController.<init>(ClientsManagementController.java:3)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 52 common frames omitted
+2025-06-11 20:22:49.733 [JavaFX Application Thread] INFO  c.g.c.AdminDashboardController - Opening Clients Management...
+2025-06-11 20:22:49.735 [JavaFX Application Thread] ERROR c.g.c.AdminDashboardController - Error opening Clients Management view: 
+javafx.fxml.LoadException: 
+/C:/GYM%20MANAGEMENT/gym/target/classes/com/gym/view/clients-management.fxml:13
+
+	at javafx.fxml/javafx.fxml.FXMLLoader.constructLoadException(FXMLLoader.java:2707)
+	at javafx.fxml/javafx.fxml.FXMLLoader$ValueElement.processAttribute(FXMLLoader.java:944)
+	at javafx.fxml/javafx.fxml.FXMLLoader$InstanceDeclarationElement.processAttribute(FXMLLoader.java:981)
+	at javafx.fxml/javafx.fxml.FXMLLoader$Element.processStartElement(FXMLLoader.java:230)
+	at javafx.fxml/javafx.fxml.FXMLLoader$ValueElement.processStartElement(FXMLLoader.java:755)
+	at javafx.fxml/javafx.fxml.FXMLLoader.processStartElement(FXMLLoader.java:2808)
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2634)
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2548)
+	at javafx.fxml/javafx.fxml.FXMLLoader.load(FXMLLoader.java:2516)
+	at com.gym.controller.AdminDashboardController.handleClientsManagement(AdminDashboardController.java:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:77)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at javafx.base/com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:275)
+	at javafx.fxml/com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:84)
+	at javafx.fxml/javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1854)
+	at javafx.fxml/javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1724)
+	at javafx.base/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)
+	at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at javafx.base/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.base/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics/javafx.scene.Scene$ClickGenerator.postProcess(Scene.java:3602)
+	at javafx.graphics/javafx.scene.Scene$MouseHandler.process(Scene.java:3906)
+	at javafx.graphics/javafx.scene.Scene.processMouseEvent(Scene.java:1878)
+	at javafx.graphics/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2623)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450)
+	at javafx.graphics/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449)
+	at javafx.graphics/com.sun.glass.ui.View.handleMouseEvent(View.java:557)
+	at javafx.graphics/com.sun.glass.ui.View.notifyMouse(View.java:943)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:184)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at javafx.fxml/javafx.fxml.FXMLLoader$ValueElement.processAttribute(FXMLLoader.java:939)
+	... 49 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The import com.gym.model cannot be resolved
+	The import com.gym.model cannot be resolved
+	The import com.gym.service cannot be resolved
+	ClientStatus cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	ClientStatus cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	ClientService cannot be resolved to a type
+	ClientService cannot be resolved to a type
+	ClientService cannot be resolved to a type
+	ClientStatus cannot be resolved to a type
+	ClientStatus cannot be resolved
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	ClientStatus cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	ClientStatus cannot be resolved to a type
+	Client cannot be resolved to a type
+	ClientStatus cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	ClientService cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	ClientDialogController cannot be resolved to a type
+	Client cannot be resolved to a type
+	ClientDialogController cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	ClientService cannot be resolved to a type
+	ClientService cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	ClientService cannot be resolved to a type
+	Client cannot be resolved to a type
+	Client cannot be resolved to a type
+	ClientDetailsDialogController cannot be resolved to a type
+
+	at com.gym.controller.ClientsManagementController.<init>(ClientsManagementController.java:3)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 52 common frames omitted
+2025-06-11 20:22:53.100 [JavaFX Application Thread] INFO  c.g.c.AdminDashboardController - Opening Staff Management...
+2025-06-11 20:22:53.123 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:22:53.123 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database username: neondb_owner
+2025-06-11 20:22:53.124 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database password: ****************
+2025-06-11 20:22:53.124 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Attempting to connect to database with URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require, username: neondb_owner
+2025-06-11 20:22:54.130 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Successfully established database connection to jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:22:54.376 [JavaFX Application Thread] INFO  c.g.c.StaffManagementController - Loaded 14 staff members from database
+2025-06-11 20:22:54.390 [JavaFX Application Thread] INFO  c.g.c.AdminDashboardController - Opened Staff Management view
+2025-06-11 20:22:56.436 [JavaFX Application Thread] INFO  c.g.c.AdminDashboardController - Opening Memberships...
+2025-06-11 20:22:56.467 [JavaFX Application Thread] INFO  com.gym.service.MembershipService - Retrieving all memberships
+2025-06-11 20:22:57.468 [JavaFX Application Thread] INFO  c.g.c.AdminDashboardController - Opened Memberships Management view
+2025-06-11 20:23:26.369 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Database properties loaded successfully from database.properties
+2025-06-11 20:23:26.374 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database driver: org.postgresql.Driver
+2025-06-11 20:23:26.374 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:23:26.374 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database username: neondb_owner
+2025-06-11 20:23:26.374 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database password: ****************
+2025-06-11 20:23:26.374 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:23:26.374 [JavaFX Application Thread] INFO  com.gym.util.EntityManagerUtil - Setting up JPA with URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:23:35.879 [JavaFX Application Thread] INFO  com.gym.util.EntityManagerUtil - JPA EntityManagerFactory created successfully
+2025-06-11 20:23:41.737 [JavaFX Application Thread] INFO  com.gym.controller.LoginController - User lemko logged in successfully with role admin
+2025-06-11 20:23:44.320 [JavaFX Application Thread] INFO  c.g.c.AdminDashboardController - Opening Clients Management...
+2025-06-11 20:23:44.381 [JavaFX Application Thread] INFO  com.gym.service.ClientService - Retrieving all clients
+2025-06-11 20:23:45.076 [JavaFX Application Thread] INFO  c.g.c.ClientsManagementController - Loaded 5 clients from database
+2025-06-11 20:23:45.089 [JavaFX Application Thread] INFO  c.g.c.AdminDashboardController - Opened Clients Management view
+2025-06-11 20:23:48.781 [JavaFX Application Thread] INFO  c.g.c.ClientDialogController - Updating existing client...
+2025-06-11 20:23:48.782 [JavaFX Application Thread] INFO  com.gym.service.ClientService - Updating existing client ID: 22
+2025-06-11 20:23:48.785 [JavaFX Application Thread] WARN  com.gym.dao.impl.ClientDao - Attempting to save client without user_id
+2025-06-11 20:23:49.238 [JavaFX Application Thread] INFO  com.gym.dao.impl.ClientDao - Updated existing client with ID: 22
+2025-06-11 20:23:49.388 [JavaFX Application Thread] INFO  c.g.c.ClientDialogController - Client updated successfully with ID: 22
+2025-06-11 20:23:49.482 [JavaFX Application Thread] INFO  com.gym.service.ClientService - Updating existing client ID: 22
+2025-06-11 20:23:49.483 [JavaFX Application Thread] WARN  com.gym.dao.impl.ClientDao - Attempting to save client without user_id
+2025-06-11 20:23:49.885 [JavaFX Application Thread] INFO  com.gym.dao.impl.ClientDao - Updated existing client with ID: 22
+2025-06-11 20:23:50.012 [JavaFX Application Thread] INFO  c.g.c.ClientsManagementController - Client updated: Markiyan Kits
+2025-06-11 20:24:49.841 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Database properties loaded successfully from database.properties
+2025-06-11 20:24:49.845 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database driver: org.postgresql.Driver
+2025-06-11 20:24:49.845 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:24:49.845 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database username: neondb_owner
+2025-06-11 20:24:49.845 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database password: ****************
+2025-06-11 20:24:49.845 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:24:49.845 [JavaFX Application Thread] INFO  com.gym.util.EntityManagerUtil - Setting up JPA with URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:24:59.512 [JavaFX Application Thread] INFO  com.gym.util.EntityManagerUtil - JPA EntityManagerFactory created successfully
+2025-06-11 20:25:06.968 [JavaFX Application Thread] INFO  com.gym.controller.LoginController - User lemko logged in successfully with role admin
+2025-06-11 20:25:08.629 [JavaFX Application Thread] INFO  c.g.c.AdminDashboardController - Opening Clients Management...
+2025-06-11 20:25:08.696 [JavaFX Application Thread] INFO  com.gym.service.ClientService - Retrieving all clients
+2025-06-11 20:25:09.357 [JavaFX Application Thread] INFO  c.g.c.ClientsManagementController - Loaded 5 clients from database
+2025-06-11 20:25:09.866 [JavaFX Application Thread] INFO  c.g.c.AdminDashboardController - Opened Clients Management view
+2025-06-11 20:25:13.591 [JavaFX Application Thread] INFO  c.g.c.AdminDashboardController - Opening Staff Management...
+2025-06-11 20:25:13.612 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database driver: org.postgresql.Driver
+2025-06-11 20:25:13.612 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - PostgreSQL JDBC Driver successfully registered
+2025-06-11 20:25:13.612 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:25:13.612 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database username: neondb_owner
+2025-06-11 20:25:13.612 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database password: ****************
+2025-06-11 20:25:13.613 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Attempting to connect to database with URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require, username: neondb_owner
+2025-06-11 20:25:14.605 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Successfully established database connection to jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:25:14.854 [JavaFX Application Thread] INFO  c.g.c.StaffManagementController - Loaded 14 staff members from database
+2025-06-11 20:25:14.870 [JavaFX Application Thread] INFO  c.g.c.AdminDashboardController - Opened Staff Management view
+2025-06-11 20:25:18.303 [JavaFX Application Thread] INFO  c.g.c.AdminDashboardController - Opening Training Schedule...
+2025-06-11 20:25:18.962 [JavaFX Application Thread] INFO  c.g.c.AdminDashboardController - Opened Training Schedule view
+2025-06-11 20:25:22.793 [JavaFX Application Thread] INFO  c.g.c.AdminDashboardController - Opening Reports...
+2025-06-11 20:25:22.880 [JavaFX Application Thread] INFO  c.gym.controller.ReportsController - Initializing Reports Controller...
+2025-06-11 20:25:22.880 [JavaFX Application Thread] INFO  c.gym.controller.ReportsController - Date pickers setup completed
+2025-06-11 20:25:22.892 [JavaFX Application Thread] INFO  c.gym.controller.ReportsController - Tables setup completed
+2025-06-11 20:25:22.892 [JavaFX Application Thread] INFO  c.gym.controller.ReportsController - Charts setup completed
+2025-06-11 20:25:22.892 [JavaFX Application Thread] INFO  c.gym.controller.ReportsController - Date picker listeners setup completed
+2025-06-11 20:25:22.892 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:25:22.892 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database username: neondb_owner
+2025-06-11 20:25:22.892 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database password: ****************
+2025-06-11 20:25:22.892 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Attempting to connect to database with URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require, username: neondb_owner
+2025-06-11 20:25:23.941 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Successfully established database connection to jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:25:24.197 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:25:24.197 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database username: neondb_owner
+2025-06-11 20:25:24.197 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database password: ****************
+2025-06-11 20:25:24.197 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Attempting to connect to database with URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require, username: neondb_owner
+2025-06-11 20:25:25.202 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Successfully established database connection to jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:25:25.462 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:25:25.462 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database username: neondb_owner
+2025-06-11 20:25:25.463 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database password: ****************
+2025-06-11 20:25:25.463 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Attempting to connect to database with URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require, username: neondb_owner
+2025-06-11 20:25:26.484 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Successfully established database connection to jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:25:26.745 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:25:26.745 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database username: neondb_owner
+2025-06-11 20:25:26.746 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database password: ****************
+2025-06-11 20:25:26.746 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Attempting to connect to database with URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require, username: neondb_owner
+2025-06-11 20:25:27.740 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Successfully established database connection to jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:25:27.992 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:25:27.993 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database username: neondb_owner
+2025-06-11 20:25:27.993 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database password: ****************
+2025-06-11 20:25:27.993 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Attempting to connect to database with URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require, username: neondb_owner
+2025-06-11 20:25:29.002 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Successfully established database connection to jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:25:29.258 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:25:29.259 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database username: neondb_owner
+2025-06-11 20:25:29.259 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database password: ****************
+2025-06-11 20:25:29.259 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Attempting to connect to database with URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require, username: neondb_owner
+2025-06-11 20:25:30.273 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Successfully established database connection to jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:25:30.533 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:25:30.533 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database username: neondb_owner
+2025-06-11 20:25:30.533 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database password: ****************
+2025-06-11 20:25:30.533 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Attempting to connect to database with URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require, username: neondb_owner
+2025-06-11 20:25:31.532 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Successfully established database connection to jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:25:31.786 [JavaFX Application Thread] INFO  c.gym.controller.ReportsController - Initial data load completed
+2025-06-11 20:26:36.707 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Database properties loaded successfully from database.properties
+2025-06-11 20:26:36.718 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database driver: org.postgresql.Driver
+2025-06-11 20:26:36.718 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:26:36.719 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database username: neondb_owner
+2025-06-11 20:26:36.719 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database password: ****************
+2025-06-11 20:26:36.719 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:26:36.719 [JavaFX Application Thread] INFO  com.gym.util.EntityManagerUtil - Setting up JPA with URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:26:46.129 [JavaFX Application Thread] INFO  com.gym.util.EntityManagerUtil - JPA EntityManagerFactory created successfully
+2025-06-11 20:26:52.985 [JavaFX Application Thread] INFO  com.gym.controller.LoginController - User lemko logged in successfully with role admin
+2025-06-11 20:26:56.816 [JavaFX Application Thread] INFO  c.g.c.AdminDashboardController - Opening Reports...
+2025-06-11 20:26:56.970 [JavaFX Application Thread] INFO  c.gym.controller.ReportsController - Initializing Reports Controller...
+2025-06-11 20:26:56.971 [JavaFX Application Thread] INFO  c.gym.controller.ReportsController - Date pickers setup completed
+2025-06-11 20:26:56.975 [JavaFX Application Thread] INFO  c.gym.controller.ReportsController - Tables setup completed
+2025-06-11 20:26:56.976 [JavaFX Application Thread] INFO  c.gym.controller.ReportsController - Charts setup completed
+2025-06-11 20:26:56.976 [JavaFX Application Thread] INFO  c.gym.controller.ReportsController - Date picker listeners setup completed
+2025-06-11 20:26:56.978 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database driver: org.postgresql.Driver
+2025-06-11 20:26:56.978 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - PostgreSQL JDBC Driver successfully registered
+2025-06-11 20:26:56.978 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:26:56.978 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database username: neondb_owner
+2025-06-11 20:26:56.978 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database password: ****************
+2025-06-11 20:26:56.978 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Attempting to connect to database with URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require, username: neondb_owner
+2025-06-11 20:26:57.981 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Successfully established database connection to jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:26:58.230 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:26:58.230 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database username: neondb_owner
+2025-06-11 20:26:58.230 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database password: ****************
+2025-06-11 20:26:58.231 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Attempting to connect to database with URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require, username: neondb_owner
+2025-06-11 20:26:59.225 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Successfully established database connection to jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:26:59.480 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:26:59.481 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database username: neondb_owner
+2025-06-11 20:26:59.481 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database password: ****************
+2025-06-11 20:26:59.481 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Attempting to connect to database with URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require, username: neondb_owner
+2025-06-11 20:27:00.480 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Successfully established database connection to jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:27:00.730 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:27:00.730 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database username: neondb_owner
+2025-06-11 20:27:00.730 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database password: ****************
+2025-06-11 20:27:00.730 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Attempting to connect to database with URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require, username: neondb_owner
+2025-06-11 20:27:01.726 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Successfully established database connection to jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:27:01.978 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:27:01.979 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database username: neondb_owner
+2025-06-11 20:27:01.979 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database password: ****************
+2025-06-11 20:27:01.979 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Attempting to connect to database with URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require, username: neondb_owner
+2025-06-11 20:27:02.977 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Successfully established database connection to jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:27:03.240 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:27:03.240 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database username: neondb_owner
+2025-06-11 20:27:03.240 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database password: ****************
+2025-06-11 20:27:03.240 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Attempting to connect to database with URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require, username: neondb_owner
+2025-06-11 20:27:04.244 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Successfully established database connection to jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:27:04.493 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:27:04.493 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database username: neondb_owner
+2025-06-11 20:27:04.493 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database password: ****************
+2025-06-11 20:27:04.493 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Attempting to connect to database with URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require, username: neondb_owner
+2025-06-11 20:27:05.497 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Successfully established database connection to jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:27:05.749 [JavaFX Application Thread] INFO  c.gym.controller.ReportsController - Initial data load completed
+2025-06-11 20:29:53.881 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Database properties loaded successfully from database.properties
+2025-06-11 20:29:53.885 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database driver: org.postgresql.Driver
+2025-06-11 20:29:53.885 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:29:53.885 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database username: neondb_owner
+2025-06-11 20:29:53.886 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database password: ****************
+2025-06-11 20:29:53.886 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:29:53.886 [JavaFX Application Thread] INFO  com.gym.util.EntityManagerUtil - Setting up JPA with URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:30:03.635 [JavaFX Application Thread] INFO  com.gym.util.EntityManagerUtil - JPA EntityManagerFactory created successfully
+2025-06-11 20:30:11.760 [JavaFX Application Thread] INFO  com.gym.controller.LoginController - User lemko logged in successfully with role admin
+2025-06-11 20:30:13.483 [JavaFX Application Thread] INFO  c.g.c.AdminDashboardController - Opening Clients Management...
+2025-06-11 20:30:13.556 [JavaFX Application Thread] INFO  com.gym.service.ClientService - Retrieving all clients
+2025-06-11 20:30:14.236 [JavaFX Application Thread] INFO  c.g.c.ClientsManagementController - Loaded 5 clients from database
+2025-06-11 20:30:14.737 [JavaFX Application Thread] INFO  c.g.c.AdminDashboardController - Opened Clients Management view
+2025-06-11 20:30:18.514 [JavaFX Application Thread] INFO  c.g.c.AdminDashboardController - Opening Staff Management...
+2025-06-11 20:30:18.540 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database driver: org.postgresql.Driver
+2025-06-11 20:30:18.541 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - PostgreSQL JDBC Driver successfully registered
+2025-06-11 20:30:18.541 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:30:18.541 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database username: neondb_owner
+2025-06-11 20:30:18.541 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database password: ****************
+2025-06-11 20:30:18.541 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Attempting to connect to database with URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require, username: neondb_owner
+2025-06-11 20:30:19.545 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Successfully established database connection to jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:30:19.807 [JavaFX Application Thread] INFO  c.g.c.StaffManagementController - Loaded 14 staff members from database
+2025-06-11 20:30:20.082 [JavaFX Application Thread] INFO  c.g.c.AdminDashboardController - Opened Staff Management view
+2025-06-11 20:33:30.112 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Database properties loaded successfully from database.properties
+2025-06-11 20:33:30.116 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database driver: org.postgresql.Driver
+2025-06-11 20:33:30.116 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:33:30.116 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database username: neondb_owner
+2025-06-11 20:33:30.116 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database password: ****************
+2025-06-11 20:33:30.116 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:33:30.117 [JavaFX Application Thread] INFO  com.gym.util.EntityManagerUtil - Setting up JPA with URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:33:40.107 [JavaFX Application Thread] INFO  com.gym.util.EntityManagerUtil - JPA EntityManagerFactory created successfully
+2025-06-11 20:33:45.742 [JavaFX Application Thread] INFO  com.gym.controller.LoginController - User lemko logged in successfully with role admin
+2025-06-11 20:33:46.620 [JavaFX Application Thread] INFO  c.g.c.AdminDashboardController - Opening Staff Management...
+2025-06-11 20:33:46.698 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database driver: org.postgresql.Driver
+2025-06-11 20:33:46.698 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - PostgreSQL JDBC Driver successfully registered
+2025-06-11 20:33:46.698 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:33:46.698 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database username: neondb_owner
+2025-06-11 20:33:46.698 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database password: ****************
+2025-06-11 20:33:46.698 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Attempting to connect to database with URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require, username: neondb_owner
+2025-06-11 20:33:47.724 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Successfully established database connection to jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:33:47.976 [JavaFX Application Thread] INFO  c.g.c.StaffManagementController - Loaded 14 staff members from database
+2025-06-11 20:33:48.515 [JavaFX Application Thread] INFO  c.g.c.AdminDashboardController - Opened Staff Management view
+2025-06-11 20:33:49.932 [JavaFX Application Thread] ERROR c.g.controller.StaffDialogController - Error loading default photo: 
+java.lang.NullPointerException: Input stream must not be null
+	at javafx.graphics/javafx.scene.image.Image.validateInputStream(Image.java:1142)
+	at javafx.graphics/javafx.scene.image.Image.<init>(Image.java:705)
+	at com.gym.controller.StaffDialogController.setDefaultPhoto(StaffDialogController.java:259)
+	at com.gym.controller.StaffDialogController.initialize(StaffDialogController.java:65)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:77)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at javafx.base/com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:275)
+	at javafx.fxml/com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:84)
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2673)
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2548)
+	at javafx.fxml/javafx.fxml.FXMLLoader.load(FXMLLoader.java:2516)
+	at com.gym.controller.StaffManagementController.handleEditStaff(StaffManagementController.java:217)
+	at com.gym.controller.StaffManagementController$1.lambda$new$0(StaffManagementController.java:132)
+	at javafx.base/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)
+	at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at javafx.base/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.base/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics/javafx.scene.Node.fireEvent(Node.java:8792)
+	at javafx.controls/javafx.scene.control.Button.fire(Button.java:203)
+	at javafx.controls/com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:208)
+	at javafx.controls/com.sun.javafx.scene.control.inputmap.InputMap.handle(InputMap.java:274)
+	at javafx.base/com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247)
+	at javafx.base/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)
+	at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at javafx.base/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.base/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics/javafx.scene.Scene$MouseHandler.process(Scene.java:3897)
+	at javafx.graphics/javafx.scene.Scene.processMouseEvent(Scene.java:1878)
+	at javafx.graphics/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2623)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450)
+	at javafx.graphics/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449)
+	at javafx.graphics/com.sun.glass.ui.View.handleMouseEvent(View.java:557)
+	at javafx.graphics/com.sun.glass.ui.View.notifyMouse(View.java:943)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:184)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+2025-06-11 20:33:49.956 [JavaFX Application Thread] INFO  c.g.controller.StaffDialogController - Editing existing staff member: Sasha
+2025-06-11 20:33:52.085 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:33:52.086 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database username: neondb_owner
+2025-06-11 20:33:52.086 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database password: ****************
+2025-06-11 20:33:52.086 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Attempting to connect to database with URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require, username: neondb_owner
+2025-06-11 20:33:53.102 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Successfully established database connection to jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:33:53.352 [JavaFX Application Thread] INFO  c.g.c.StaffManagementController - Loaded 14 staff members from database
+2025-06-11 20:33:55.541 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:33:55.541 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database username: neondb_owner
+2025-06-11 20:33:55.541 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database password: ****************
+2025-06-11 20:33:55.541 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Attempting to connect to database with URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require, username: neondb_owner
+2025-06-11 20:33:56.542 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Successfully established database connection to jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:33:57.678 [JavaFX Application Thread] INFO  c.g.c.AdminDashboardController - Opening Memberships...
+2025-06-11 20:33:57.703 [JavaFX Application Thread] INFO  com.gym.service.MembershipService - Retrieving all memberships
+2025-06-11 20:33:58.667 [JavaFX Application Thread] INFO  c.g.c.AdminDashboardController - Opened Memberships Management view
+2025-06-11 20:35:26.565 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Database properties loaded successfully from database.properties
+2025-06-11 20:35:26.570 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database driver: org.postgresql.Driver
+2025-06-11 20:35:26.570 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:35:26.570 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database username: neondb_owner
+2025-06-11 20:35:26.570 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database password: ****************
+2025-06-11 20:35:26.570 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:35:26.570 [JavaFX Application Thread] INFO  com.gym.util.EntityManagerUtil - Setting up JPA with URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:35:36.494 [JavaFX Application Thread] INFO  com.gym.util.EntityManagerUtil - JPA EntityManagerFactory created successfully
+2025-06-11 20:36:50.215 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Database properties loaded successfully from database.properties
+2025-06-11 20:36:50.220 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database driver: org.postgresql.Driver
+2025-06-11 20:36:50.220 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:36:50.220 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database username: neondb_owner
+2025-06-11 20:36:50.220 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database password: ****************
+2025-06-11 20:36:50.220 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:36:50.220 [JavaFX Application Thread] INFO  com.gym.util.EntityManagerUtil - Setting up JPA with URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:36:59.991 [JavaFX Application Thread] INFO  com.gym.util.EntityManagerUtil - JPA EntityManagerFactory created successfully
+2025-06-11 20:37:07.041 [JavaFX Application Thread] INFO  com.gym.controller.LoginController - User lemko logged in successfully with role admin
+2025-06-11 20:37:08.296 [JavaFX Application Thread] INFO  c.g.c.AdminDashboardController - Opening Clients Management...
+2025-06-11 20:37:08.355 [JavaFX Application Thread] INFO  com.gym.service.ClientService - Retrieving all clients
+2025-06-11 20:37:09.034 [JavaFX Application Thread] INFO  c.g.c.ClientsManagementController - Loaded 5 clients from database
+2025-06-11 20:37:09.459 [JavaFX Application Thread] INFO  c.g.c.AdminDashboardController - Opened Clients Management view
+2025-06-11 20:38:36.727 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Database properties loaded successfully from database.properties
+2025-06-11 20:38:36.739 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database driver: org.postgresql.Driver
+2025-06-11 20:38:36.739 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:38:36.739 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database username: neondb_owner
+2025-06-11 20:38:36.739 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database password: ****************
+2025-06-11 20:38:36.739 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:38:36.739 [JavaFX Application Thread] INFO  com.gym.util.EntityManagerUtil - Setting up JPA with URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:38:46.901 [JavaFX Application Thread] INFO  com.gym.util.EntityManagerUtil - JPA EntityManagerFactory created successfully
+2025-06-11 20:38:54.868 [JavaFX Application Thread] INFO  com.gym.controller.LoginController - User lemko logged in successfully with role admin
+2025-06-11 20:38:56.390 [JavaFX Application Thread] INFO  c.g.c.AdminDashboardController - Opening Staff Management...
+2025-06-11 20:38:56.464 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database driver: org.postgresql.Driver
+2025-06-11 20:38:56.464 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - PostgreSQL JDBC Driver successfully registered
+2025-06-11 20:38:56.464 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:38:56.464 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database username: neondb_owner
+2025-06-11 20:38:56.464 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database password: ****************
+2025-06-11 20:38:56.465 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Attempting to connect to database with URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require, username: neondb_owner
+2025-06-11 20:38:57.474 [JavaFX Application Thread] INFO  com.gym.util.DatabaseConnection - Successfully established database connection to jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:38:57.728 [JavaFX Application Thread] INFO  c.g.c.StaffManagementController - Loaded 14 staff members from database
+2025-06-11 20:38:58.250 [JavaFX Application Thread] INFO  c.g.c.AdminDashboardController - Opened Staff Management view
+2025-06-11 20:39:53.494 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Database properties loaded successfully from database.properties
+2025-06-11 20:39:53.497 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database driver: org.postgresql.Driver
+2025-06-11 20:39:53.497 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:39:53.497 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database username: neondb_owner
+2025-06-11 20:39:53.497 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database password: ****************
+2025-06-11 20:39:53.497 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:39:53.497 [JavaFX Application Thread] INFO  com.gym.util.EntityManagerUtil - Setting up JPA with URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:40:03.285 [JavaFX Application Thread] INFO  com.gym.util.EntityManagerUtil - JPA EntityManagerFactory created successfully
+2025-06-11 20:40:13.555 [JavaFX Application Thread] INFO  com.gym.controller.LoginController - User lemko logged in successfully with role admin
+2025-06-11 20:41:32.775 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Database properties loaded successfully from database.properties
+2025-06-11 20:41:32.791 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database driver: org.postgresql.Driver
+2025-06-11 20:41:32.792 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:41:32.793 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database username: neondb_owner
+2025-06-11 20:41:32.793 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database password: ****************
+2025-06-11 20:41:32.793 [JavaFX Application Thread] INFO  com.gym.util.HibernateConfig - Using database URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:41:32.793 [JavaFX Application Thread] INFO  com.gym.util.EntityManagerUtil - Setting up JPA with URL: jdbc:postgresql://ep-cool-mode-a821ko6i-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+2025-06-11 20:41:42.759 [JavaFX Application Thread] INFO  com.gym.util.EntityManagerUtil - JPA EntityManagerFactory created successfully
+2025-06-11 20:41:51.271 [JavaFX Application Thread] ERROR com.gym.controller.LoginController - Error loading dashboard for role admin: {}
+javafx.fxml.LoadException: 
+/C:/GYM%20MANAGEMENT/gym/target/classes/com/gym/view/admin-dashboard.fxml:13
+
+	at javafx.fxml/javafx.fxml.FXMLLoader.constructLoadException(FXMLLoader.java:2707)
+	at javafx.fxml/javafx.fxml.FXMLLoader$ValueElement.processAttribute(FXMLLoader.java:944)
+	at javafx.fxml/javafx.fxml.FXMLLoader$InstanceDeclarationElement.processAttribute(FXMLLoader.java:981)
+	at javafx.fxml/javafx.fxml.FXMLLoader$Element.processStartElement(FXMLLoader.java:230)
+	at javafx.fxml/javafx.fxml.FXMLLoader$ValueElement.processStartElement(FXMLLoader.java:755)
+	at javafx.fxml/javafx.fxml.FXMLLoader.processStartElement(FXMLLoader.java:2808)
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2634)
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2548)
+	at javafx.fxml/javafx.fxml.FXMLLoader.load(FXMLLoader.java:2516)
+	at com.gym.controller.LoginController.onSuccessfulLogin(LoginController.java:96)
+	at com.gym.controller.LoginController.lambda$handleLogin$3(LoginController.java:65)
+	at java.base/java.util.Optional.ifPresentOrElse(Optional.java:196)
+	at com.gym.controller.LoginController.handleLogin(LoginController.java:62)
+	at com.gym.controller.LoginController.lambda$initialize$0(LoginController.java:41)
+	at javafx.base/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)
+	at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at javafx.base/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.base/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics/javafx.scene.Scene$KeyHandler.process(Scene.java:4105)
+	at javafx.graphics/javafx.scene.Scene.processKeyEvent(Scene.java:2156)
+	at javafx.graphics/javafx.scene.Scene$ScenePeerListener.keyEvent(Scene.java:2630)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler$KeyEventNotification.run(GlassViewEventHandler.java:218)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler$KeyEventNotification.run(GlassViewEventHandler.java:150)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleKeyEvent$1(GlassViewEventHandler.java:250)
+	at javafx.graphics/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleKeyEvent(GlassViewEventHandler.java:249)
+	at javafx.graphics/com.sun.glass.ui.View.handleKeyEvent(View.java:548)
+	at javafx.graphics/com.sun.glass.ui.View.notifyKey(View.java:972)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:184)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at javafx.fxml/javafx.fxml.FXMLLoader$ValueElement.processAttribute(FXMLLoader.java:939)
+	... 39 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The import com.gym.model cannot be resolved
+	User cannot be resolved to a type
+	User cannot be resolved to a type
+	User cannot be resolved to a type
+
+	at com.gym.controller.AdminDashboardController.<init>(AdminDashboardController.java:3)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 42 common frames omitted

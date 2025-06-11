@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.ImageView?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.gym.controller.StaffDialogController"
+      stylesheets="@../styles/staff-dialog.css"
+      styleClass="dialog-root"
+      spacing="20">
+    
+    <padding>
+        <Insets top="30" right="40" bottom="30" left="40"/>
+    </padding>
+
+    <HBox alignment="CENTER">
+        <Text fx:id="dialogTitle" styleClass="dialog-title"/>
+    </HBox>
+
+    <VBox alignment="CENTER" spacing="10" styleClass="photo-section">
+        <ImageView fx:id="photoPreview" fitHeight="150" fitWidth="150" styleClass="photo-preview" preserveRatio="true"/>
+        <Button fx:id="uploadButton" text="Upload Photo" styleClass="upload-button" onAction="#handlePhotoUpload">
+            <graphic>
+                <FontAwesomeIconView glyphName="UPLOAD" styleClass="upload-icon"/>
+            </graphic>
+        </Button>
+    </VBox>
+
+    <GridPane hgap="15" vgap="15">
+        <columnConstraints>
+            <ColumnConstraints hgrow="NEVER" minWidth="100"/>
+            <ColumnConstraints hgrow="ALWAYS"/>
+        </columnConstraints>
+
+        <Label text="Full Name:" styleClass="field-label" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <TextField fx:id="fullNameField" styleClass="field-input" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+        <Label text="Role:" styleClass="field-label" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <ComboBox fx:id="roleComboBox" styleClass="field-input" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+        <Label text="Phone:" styleClass="field-label" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        <TextField fx:id="phoneField" styleClass="field-input" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+        <Label text="Email:" styleClass="field-label" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+        <TextField fx:id="emailField" styleClass="field-input" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+
+        <Label text="Salary:" styleClass="field-label" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+        <TextField fx:id="salaryField" styleClass="field-input" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+
+        <Label text="Schedule:" styleClass="field-label" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+        <VBox spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="5">
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <Label text="Monday:" minWidth="80"/>
+                <TextField fx:id="mondayScheduleField" styleClass="schedule-input" promptText="e.g. 9:00-18:00"/>
+            </HBox>
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <Label text="Tuesday:" minWidth="80"/>
+                <TextField fx:id="tuesdayScheduleField" styleClass="schedule-input" promptText="e.g. 9:00-18:00"/>
+            </HBox>
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <Label text="Wednesday:" minWidth="80"/>
+                <TextField fx:id="wednesdayScheduleField" styleClass="schedule-input" promptText="e.g. 9:00-18:00"/>
+            </HBox>
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <Label text="Thursday:" minWidth="80"/>
+                <TextField fx:id="thursdayScheduleField" styleClass="schedule-input" promptText="e.g. 9:00-18:00"/>
+            </HBox>
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <Label text="Friday:" minWidth="80"/>
+                <TextField fx:id="fridayScheduleField" styleClass="schedule-input" promptText="e.g. 9:00-18:00"/>
+            </HBox>
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <Label text="Saturday:" minWidth="80"/>
+                <TextField fx:id="saturdayScheduleField" styleClass="schedule-input" promptText="e.g. 9:00-18:00"/>
+            </HBox>
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <Label text="Sunday:" minWidth="80"/>
+                <TextField fx:id="sundayScheduleField" styleClass="schedule-input" promptText="e.g. 9:00-18:00"/>
+            </HBox>
+        </VBox>
+    </GridPane>
+
+    <Label fx:id="errorLabel" styleClass="error-label" wrapText="true"/>
+
+    <HBox spacing="10" alignment="CENTER_RIGHT">
+        <Button fx:id="cancelButton" text="Cancel" styleClass="cancel-button" onAction="#handleCancel"/>
+        <Button fx:id="saveButton" text="Save" styleClass="save-button" onAction="#handleSave"/>
+    </HBox>
+</VBox> 

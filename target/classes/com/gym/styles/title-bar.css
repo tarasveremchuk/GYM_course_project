@@ -1,0 +1,29 @@
+.title-bar {
+    -fx-background-color: linear-gradient(to bottom, #f8f8f8, #e8e8e8);
+    -fx-border-color: #d0d0d0;
+    -fx-border-width: 0 0 1 0;
+}
+
+.title-bar-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+    -fx-padding: 2px 8px;
+}
+
+.title-bar-button:hover {
+    -fx-background-color: rgba(0, 0, 0, 0.05);
+}
+
+.title-bar-button:pressed {
+    -fx-background-color: rgba(0, 0, 0, 0.1);
+}
+
+.title-bar-button:disabled {
+    -fx-opacity: 0.5;
+    -fx-cursor: default;
+}
+
+.title-bar-icon {
+    -fx-fill: #555555;
+    -fx-size: 12;
+}

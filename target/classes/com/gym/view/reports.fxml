@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Text?>
+
+<VBox spacing="10" xmlns:fx="http://javafx.com/fxml" fx:controller="com.gym.controller.ReportsController"
+      stylesheets="@../styles/reports.css">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="From:"/>
+        <DatePicker fx:id="fromDatePicker"/>
+        <Label text="To:"/>
+        <DatePicker fx:id="toDatePicker"/>
+    </HBox>
+
+    <TabPane fx:id="reportsTabs" VBox.vgrow="ALWAYS">
+        <Tab text="Visits" closable="false">
+            <VBox spacing="10">
+                <HBox spacing="20" VBox.vgrow="ALWAYS">
+                    <VBox spacing="5" HBox.hgrow="ALWAYS">
+                        <Label text="Client Visits" styleClass="section-header"/>
+                        <TableView fx:id="clientVisitsTable" VBox.vgrow="ALWAYS">
+                            <columns>
+                                <TableColumn fx:id="clientNameColumn" text="Client Name" prefWidth="200"/>
+                                <TableColumn fx:id="visitsCountColumn" text="Visits" prefWidth="100"/>
+                            </columns>
+                        </TableView>
+                    </VBox>
+                    
+                    <VBox spacing="5" HBox.hgrow="ALWAYS">
+                        <Label text="Visits by Day" styleClass="section-header"/>
+                        <BarChart fx:id="visitsByDayChart" VBox.vgrow="ALWAYS">
+                            <xAxis>
+                                <CategoryAxis side="BOTTOM"/>
+                            </xAxis>
+                            <yAxis>
+                                <NumberAxis side="LEFT"/>
+                            </yAxis>
+                        </BarChart>
+                    </VBox>
+                </HBox>
+            </VBox>
+        </Tab>
+
+        <Tab text="Trainers" closable="false">
+            <VBox spacing="10">
+                <Label text="Trainer Statistics" styleClass="section-header"/>
+                <TableView fx:id="trainerStatsTable" VBox.vgrow="ALWAYS">
+                    <columns>
+                        <TableColumn fx:id="trainerNameColumn" text="Trainer Name" prefWidth="200"/>
+                        <TableColumn fx:id="totalClientsColumn" text="Total Clients" prefWidth="120"/>
+                        <TableColumn fx:id="totalBookingsColumn" text="Total Bookings" prefWidth="120"/>
+                        <TableColumn fx:id="attendanceRateColumn" text="Attendance Rate %" prefWidth="150"/>
+                    </columns>
+                </TableView>
+            </VBox>
+        </Tab>
+
+        <Tab text="Payments" closable="false">
+            <VBox spacing="10">
+                <Label fx:id="totalAmountLabel" styleClass="total-amount"/>
+                
+                <HBox spacing="20" VBox.vgrow="ALWAYS">
+                    <VBox spacing="10" HBox.hgrow="ALWAYS">
+                        <PieChart fx:id="paymentMethodsChart" title="Payment Methods" VBox.vgrow="ALWAYS"/>
+                        <LineChart fx:id="dailyPaymentsChart" title="Daily Payments" VBox.vgrow="ALWAYS">
+                            <xAxis>
+                                <CategoryAxis side="BOTTOM"/>
+                            </xAxis>
+                            <yAxis>
+                                <NumberAxis side="LEFT"/>
+                            </yAxis>
+                        </LineChart>
+                    </VBox>
+                    
+                    <VBox spacing="5" HBox.hgrow="ALWAYS">
+                        <Label text="Outstanding Payments" styleClass="section-header"/>
+                        <TableView fx:id="outstandingPaymentsTable" VBox.vgrow="ALWAYS">
+                            <columns>
+                                <TableColumn fx:id="debtorNameColumn" text="Client Name" prefWidth="150"/>
+                                <TableColumn fx:id="membershipTypeColumn" text="Membership" prefWidth="100"/>
+                                <TableColumn fx:id="startDateColumn" text="Start Date" prefWidth="100"/>
+                                <TableColumn fx:id="endDateColumn" text="End Date" prefWidth="100"/>
+                            </columns>
+                        </TableView>
+                    </VBox>
+                </HBox>
+            </VBox>
+        </Tab>
+
+        <Tab text="Popular Trainings" closable="false">
+            <VBox spacing="10">
+                <Label text="Top 5 Most Popular Trainings" styleClass="section-header"/>
+                <TableView fx:id="topTrainingsTable" VBox.vgrow="ALWAYS">
+                    <columns>
+                        <TableColumn fx:id="trainingNameColumn" text="Training Name" prefWidth="200"/>
+                        <TableColumn fx:id="trainingTrainerColumn" text="Trainer" prefWidth="150"/>
+                        <TableColumn fx:id="bookingsCountColumn" text="Total Bookings" prefWidth="120"/>
+                        <TableColumn fx:id="attendanceRateColumn2" text="Attendance Rate %" prefWidth="150"/>
+                    </columns>
+                </TableView>
+            </VBox>
+        </Tab>
+    </TabPane>
+</VBox> 

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17" 
+            xmlns:fx="http://javafx.com/fxml/1" 
+            fx:controller="com.gym.controller.ClientDashboardController"
+            stylesheets="@../styles/client-dashboard.css"
+            styleClass="root">
+
+    <top>
+        <HBox styleClass="top-bar" alignment="CENTER_LEFT" spacing="20">
+            <padding>
+                <Insets top="20" right="30" bottom="20" left="30"/>
+            </padding>
+            <Text styleClass="header-text" text="Client Dashboard"/>
+            <Region HBox.hgrow="ALWAYS"/>
+            <Label fx:id="nameLabel" styleClass="username-label"/>
+            <Button fx:id="logoutButton" text="Logout" styleClass="logout-button" onAction="#handleLogout"/>
+        </HBox>
+    </top>
+
+    <center>
+        <ScrollPane fitToWidth="true" styleClass="scroll-pane">
+            <VBox spacing="20">
+                <padding>
+                    <Insets top="30" right="30" bottom="30" left="30"/>
+                </padding>
+
+                <HBox styleClass="profile-section" spacing="20" alignment="CENTER_LEFT">
+                    <ImageView fx:id="profileImage" fitHeight="150" fitWidth="150" 
+                              preserveRatio="true" styleClass="profile-image"/>
+                    <VBox spacing="10" HBox.hgrow="ALWAYS">
+                        <Label fx:id="nameLabel" styleClass="profile-info-header"/>
+                        <Label fx:id="emailLabel" styleClass="profile-info"/>
+                        <Label fx:id="phoneLabel" styleClass="profile-info"/>
+                        <Separator/>
+                        <Label text="Medical Information" styleClass="section-header"/>
+                        <TextArea fx:id="medicalNotesArea" 
+                                  styleClass="medical-notes" 
+                                  wrapText="true" 
+                                  editable="false" 
+                                  prefRowCount="3" 
+                                  style="-fx-text-fill: white; -fx-control-inner-background: #1a1a1a;"/>
+                        <Separator/>
+                        <Label text="Membership Information" styleClass="section-header"/>
+                        <VBox spacing="5" styleClass="membership-info">
+                            <Label fx:id="membershipTypeLabel" styleClass="membership-detail"/>
+                            <Label fx:id="membershipStatusLabel" styleClass="membership-detail"/>
+                            <Label fx:id="membershipDateLabel" styleClass="membership-detail"/>
+                            <Label fx:id="membershipVisitsLabel" styleClass="membership-detail"/>
+                        </VBox>
+                    </VBox>
+                </HBox>
+
+                <TitledPane text="Training Information" expanded="true">
+                    <VBox spacing="20">
+                        <HBox spacing="10" alignment="CENTER_LEFT">
+                            <Label text="Upcoming Trainings" styleClass="section-header" HBox.hgrow="ALWAYS"/>
+                            <Button fx:id="bookTrainingButton" text="Book Training" styleClass="action-button" onAction="#handleBookTraining"/>
+                        </HBox>
+                        <TableView fx:id="upcomingTrainingsTable" VBox.vgrow="ALWAYS" minHeight="200">
+                            <columns>
+                                <TableColumn fx:id="trainingDateColumn" text="Date" prefWidth="120"/>
+                                <TableColumn fx:id="trainingTimeColumn" text="Time" prefWidth="100"/>
+                                <TableColumn fx:id="trainingNameColumn" text="Training" prefWidth="200"/>
+                                <TableColumn fx:id="trainerColumn" text="Trainer" prefWidth="200"/>
+                                <TableColumn fx:id="durationColumn" text="Duration (min)" prefWidth="120"/>
+                                <TableColumn fx:id="upcomingStatusColumn" text="Status" prefWidth="120"/>
+                                <TableColumn fx:id="upcomingActionsColumn" text="Actions" prefWidth="120"/>
+                            </columns>
+                            <columnResizePolicy><TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/></columnResizePolicy>
+                        </TableView>
+
+                        <Separator/>
+
+                        <Label text="Training History" styleClass="section-header"/>
+                        <TableView fx:id="trainingHistoryTable" VBox.vgrow="ALWAYS" minHeight="200">
+                            <columns>
+                                <TableColumn fx:id="historyDateColumn" text="Date" prefWidth="120"/>
+                                <TableColumn fx:id="historyTrainingColumn" text="Training" prefWidth="200"/>
+                                <TableColumn fx:id="historyTrainerColumn" text="Trainer" prefWidth="200"/>
+                                <TableColumn fx:id="historyStatusColumn" text="Status" prefWidth="120"/>
+                            </columns>
+                            <columnResizePolicy><TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/></columnResizePolicy>
+                        </TableView>
+                    </VBox>
+                </TitledPane>
+            </VBox>
+        </ScrollPane>
+    </center>
+</BorderPane>
